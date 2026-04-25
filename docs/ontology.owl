@@ -1,0 +1,2010 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/eu-meddevice#"
+     xml:base="http://www.example.org/eu-meddevice"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:eu-meddevice="http://www.example.org/eu-meddevice#">
+    <owl:Ontology rdf:about="http://www.example.org/eu-meddevice#">
+        <terms:creator>Mario Pérez Martínez</terms:creator>
+        <terms:description xml:lang="en">OWL ontology for high-risk medical devices and in vitro diagnostics, including manufacturers, risks, incidents and field safety corrective actions under MDR and IVDR.</terms:description>
+        <terms:title xml:lang="en">EU High-Risk Medical Devices and IVD Ontology</terms:title>
+        <rdfs:comment xml:lang="en">Ontology created for PEC 2 about high-risk medical devices and in vitro diagnostics.</rdfs:comment>
+        <rdfs:label xml:lang="en">EU High-Risk Medical Devices and IVD Ontology</rdfs:label>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <skos:definition xml:lang="en">OWL ontology for high-risk medical devices and in vitro diagnostics, including manufacturers, risks, incidents and field safety corrective actions.</skos:definition>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#argument1 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#argument1"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#argument2 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#argument2"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#body -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#body"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#classPredicate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#classPredicate"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#head -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#head"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#propertyPredicate -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#propertyPredicate"/>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#varName -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/11/swrl#varName"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#addressesIncident -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#addressesIncident">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:comment xml:lang="en">Links an FSCA to the incident it addresses.</rdfs:comment>
+        <rdfs:label xml:lang="en">addressesIncident</rdfs:label>
+        <skos:definition xml:lang="en">Links an FSCA to the incident it addresses.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#affectsDevice -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#affectsDevice">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Inferred property linking an FSCA to the device affected by the action.</rdfs:comment>
+        <rdfs:label xml:lang="en">affectsDevice</rdfs:label>
+        <skos:definition xml:lang="en">Inferred property linking an FSCA to the device affected by the action.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#governedByFramework -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#governedByFramework">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#RegulatoryFramework"/>
+        <rdfs:comment xml:lang="en">Links a device to the regulatory framework under which it is registered.</rdfs:comment>
+        <rdfs:label xml:lang="en">governedByFramework</rdfs:label>
+        <skos:definition xml:lang="en">Links a device to the regulatory framework under which it is registered.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasFSCAStatus -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasFSCAStatus">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#FSCAStatus"/>
+        <rdfs:comment xml:lang="en">Links an FSCA to its status.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFSCAStatus</rdfs:label>
+        <skos:definition xml:lang="en">Links an FSCA to its status.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasManufacturer -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasManufacturer">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:comment xml:lang="en">Links a device to its manufacturer.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasManufacturer</rdfs:label>
+        <skos:definition xml:lang="en">Links a device to its manufacturer.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasPatientSex -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasPatientSex">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#SexCategory"/>
+        <rdfs:comment xml:lang="en">Relates an incident to the patient sex category when available.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPatientSex</rdfs:label>
+        <skos:definition xml:lang="en">Relates an incident to the patient sex category when available.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasProbability -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasProbability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#ProbabilityLevel"/>
+        <rdfs:comment xml:lang="en">Links a risk to its probability level.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasProbability</rdfs:label>
+        <skos:definition xml:lang="en">Links a risk to its probability level.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasRelatedRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasRelatedRisk">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Inferred property linking a device to a risk mentioned in an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRelatedRisk</rdfs:label>
+        <skos:definition xml:lang="en">Inferred property linking a device to a risk mentioned in an incident.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasRiskCategory -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasRiskCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#RiskCategory"/>
+        <rdfs:comment xml:lang="en">Links a risk to its risk category.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskCategory</rdfs:label>
+        <skos:definition xml:lang="en">Links a risk to its risk category.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasRiskClass -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasRiskClass">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#RiskClass"/>
+        <rdfs:comment xml:lang="en">Links a device to its risk class.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskClass</rdfs:label>
+        <skos:definition xml:lang="en">Links a device to its risk class.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasSeverity -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#hasSeverity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#SeverityLevel"/>
+        <rdfs:comment xml:lang="en">Links a risk to its severity level.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasSeverity</rdfs:label>
+        <skos:definition xml:lang="en">Links a risk to its severity level.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#involvesDevice -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#involvesDevice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Links an incident to the involved device.</rdfs:comment>
+        <rdfs:label xml:lang="en">involvesDevice</rdfs:label>
+        <skos:definition xml:lang="en">Links an incident to the involved device.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#isAssociatedWithRisk -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#isAssociatedWithRisk">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Links an incident to the related risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">isAssociatedWithRisk</rdfs:label>
+        <skos:definition xml:lang="en">Links an incident to the related risk.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#isSubclassifiedUnder -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#isSubclassifiedUnder">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:comment xml:lang="en">Transitive property reused from Exercise 1 to represent transitive classification links between classification resources.</rdfs:comment>
+        <rdfs:label xml:lang="en">isSubclassifiedUnder</rdfs:label>
+        <skos:definition xml:lang="en">Transitive property reused from Exercise 1 to represent transitive classification links between classification resources.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#locatedInCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#locatedInCountry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Country"/>
+        <rdfs:comment xml:lang="en">Links a manufacturer to its country.</rdfs:comment>
+        <rdfs:label xml:lang="en">locatedInCountry</rdfs:label>
+        <skos:definition xml:lang="en">Links a manufacturer to its country.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#reportedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#reportedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#ReportableEntity"/>
+        <rdfs:comment xml:lang="en">Links an incident to the reporting entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">reportedBy</rdfs:label>
+        <skos:definition xml:lang="en">Links an incident to the reporting entity.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#reportedInCountry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#reportedInCountry">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#Country"/>
+        <rdfs:comment xml:lang="en">Links an incident to the country where it was reported.</rdfs:comment>
+        <rdfs:label xml:lang="en">reportedInCountry</rdfs:label>
+        <skos:definition xml:lang="en">Links an incident to the country where it was reported.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#supervisedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/eu-meddevice#supervisedBy">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.example.org/eu-meddevice#CompetentAuthority"/>
+        <rdfs:comment xml:lang="en">Links a manufacturer to its supervising competent authority.</rdfs:comment>
+        <rdfs:label xml:lang="en">supervisedBy</rdfs:label>
+        <skos:definition xml:lang="en">Links a manufacturer to its supervising competent authority.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasActionDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasActionDate">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the action date.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasActionDate</rdfs:label>
+        <skos:definition xml:lang="en">Stores the action date.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasAuthorizationNumber -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasAuthorizationNumber">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the manufacturer authorisation number.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasAuthorizationNumber</rdfs:label>
+        <skos:definition xml:lang="en">Stores the manufacturer authorisation number.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasClosureDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasClosureDate">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the closure date when available.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasClosureDate</rdfs:label>
+        <skos:definition xml:lang="en">Stores the closure date when available.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasContactEmail -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasContactEmail">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the regulatory contact email.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasContactEmail</rdfs:label>
+        <skos:definition xml:lang="en">Stores the regulatory contact email.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasCorrectiveActionTaken -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasCorrectiveActionTaken">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether a corrective action was taken.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCorrectiveActionTaken</rdfs:label>
+        <skos:definition xml:lang="en">Indicates whether a corrective action was taken.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasCountriesAffected -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasCountriesAffected">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the textual expression of affected countries.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasCountriesAffected</rdfs:label>
+        <skos:definition xml:lang="en">Stores the textual expression of affected countries.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasDescription -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasDescription">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores a textual description.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDescription</rdfs:label>
+        <skos:definition xml:lang="en">Stores a textual description.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasDetectionDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasDetectionDate">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the detection date.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDetectionDate</rdfs:label>
+        <skos:definition xml:lang="en">Stores the detection date.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasDeviceId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasDeviceId">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the device identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDeviceId</rdfs:label>
+        <skos:definition xml:lang="en">Stores the device identifier.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasDeviceName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasDeviceName">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the device commercial name.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDeviceName</rdfs:label>
+        <skos:definition xml:lang="en">Stores the device commercial name.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasDevicesAffected -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasDevicesAffected">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the number or textual expression of affected devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasDevicesAffected</rdfs:label>
+        <skos:definition xml:lang="en">Stores the number or textual expression of affected devices.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasEUDAMEDSRN -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasEUDAMEDSRN">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the EUDAMED SRN.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEUDAMEDSRN</rdfs:label>
+        <skos:definition xml:lang="en">Stores the EUDAMED SRN.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasEventDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasEventDate">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the event date.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasEventDate</rdfs:label>
+        <skos:definition xml:lang="en">Stores the event date.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasFSCAId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasFSCAId">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the FSCA identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFSCAId</rdfs:label>
+        <skos:definition xml:lang="en">Stores the FSCA identifier.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasFSCAReference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasFSCAReference">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the EUDAMED FSCA reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasFSCAReference</rdfs:label>
+        <skos:definition xml:lang="en">Stores the EUDAMED FSCA reference.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasIMDRFCode -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasIMDRFCode">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the IMDRF code.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIMDRFCode</rdfs:label>
+        <skos:definition xml:lang="en">Stores the IMDRF code.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasIncidentId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasIncidentId">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the incident identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIncidentId</rdfs:label>
+        <skos:definition xml:lang="en">Stores the incident identifier.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasIncidentReference -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasIncidentReference">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the EUDAMED incident reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIncidentReference</rdfs:label>
+        <skos:definition xml:lang="en">Stores the EUDAMED incident reference.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasIntendedPurpose -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasIntendedPurpose">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the intended purpose of a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasIntendedPurpose</rdfs:label>
+        <skos:definition xml:lang="en">Stores the intended purpose of a device.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasManufacturerId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasManufacturerId">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the manufacturer identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasManufacturerId</rdfs:label>
+        <skos:definition xml:lang="en">Stores the manufacturer identifier.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasName">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores a preferred name.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasName</rdfs:label>
+        <skos:definition xml:lang="en">Stores a preferred name.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasOutcome -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasOutcome">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the incident outcome.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasOutcome</rdfs:label>
+        <skos:definition xml:lang="en">Stores the incident outcome.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasPatientAge -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasPatientAge">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="en">Stores the patient age when available.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasPatientAge</rdfs:label>
+        <skos:definition xml:lang="en">Stores the patient age when available.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasReportDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasReportDate">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:comment xml:lang="en">Stores the report date.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasReportDate</rdfs:label>
+        <skos:definition xml:lang="en">Stores the report date.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasRiskId -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasRiskId">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the risk identifier.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskId</rdfs:label>
+        <skos:definition xml:lang="en">Stores the risk identifier.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasRiskName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasRiskName">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the preferred risk name.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasRiskName</rdfs:label>
+        <skos:definition xml:lang="en">Stores the preferred risk name.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasScope -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasScope">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the textual scope of the FSCA.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasScope</rdfs:label>
+        <skos:definition xml:lang="en">Stores the textual scope of the FSCA.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#hasUDIDI -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#hasUDIDI">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Stores the UDI-DI code.</rdfs:comment>
+        <rdfs:label xml:lang="en">hasUDIDI</rdfs:label>
+        <skos:definition xml:lang="en">Stores the UDI-DI code.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#isActive -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#isActive">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device is active.</rdfs:comment>
+        <rdfs:label xml:lang="en">isActive</rdfs:label>
+        <skos:definition xml:lang="en">Indicates whether the device is active.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#isIVD -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#isIVD">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device is an IVD.</rdfs:comment>
+        <rdfs:label xml:lang="en">isIVD</rdfs:label>
+        <skos:definition xml:lang="en">Indicates whether the device is an IVD.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#isImplantable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#isImplantable">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device is implantable.</rdfs:comment>
+        <rdfs:label xml:lang="en">isImplantable</rdfs:label>
+        <skos:definition xml:lang="en">Indicates whether the device is implantable.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#isReusable -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/eu-meddevice#isReusable">
+        <rdfs:domain rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Indicates whether the device is reusable.</rdfs:comment>
+        <rdfs:label xml:lang="en">isReusable</rdfs:label>
+        <skos:definition xml:lang="en">Indicates whether the device is reusable.</skos:definition>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ActiveDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#ActiveDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device subclass for active devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">ActiveDevice</rdfs:label>
+        <skos:definition xml:lang="en">Device subclass for active devices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ActiveImplant -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#ActiveImplant">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device subclass for active implant devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">ActiveImplant</rdfs:label>
+        <skos:definition xml:lang="en">Device subclass for active implant devices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#CompetentAuthority -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#CompetentAuthority">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:comment xml:lang="en">National competent authority supervising manufacturers or products.</rdfs:comment>
+        <rdfs:label xml:lang="en">CompetentAuthority</rdfs:label>
+        <skos:definition xml:lang="en">National competent authority supervising manufacturers or products.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ContaminationRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#ContaminationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing contamination issues.</rdfs:comment>
+        <rdfs:label xml:lang="en">ContaminationRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing contamination issues.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#Country">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Country relevant to manufacturers or incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <skos:definition xml:lang="en">Country relevant to manufacturers or incidents.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#CybersecurityRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#CybersecurityRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing cybersecurity threats.</rdfs:comment>
+        <rdfs:label xml:lang="en">CybersecurityRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing cybersecurity threats.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Device -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#Device">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/eu-meddevice#governedByFramework"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/eu-meddevice#RegulatoryFramework"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/eu-meddevice#hasManufacturer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/eu-meddevice#hasRiskClass"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/eu-meddevice#RiskClass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Medical device or in vitro diagnostic product registered in the catalogue.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+        <skos:definition xml:lang="en">Medical device or in vitro diagnostic product registered in the catalogue.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#DeviceType -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#DeviceType">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Controlled concept used to classify the type of medical device.</rdfs:comment>
+        <rdfs:label xml:lang="en">DeviceType</rdfs:label>
+        <skos:definition xml:lang="en">Controlled concept used to classify the type of medical device.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#DiagnosticRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#DiagnosticRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing diagnostic errors or failures.</rdfs:comment>
+        <rdfs:label xml:lang="en">DiagnosticRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing diagnostic errors or failures.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#FSCA -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#FSCA">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/eu-meddevice#addressesIncident"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Field safety corrective action associated with an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCA</rdfs:label>
+        <skos:definition xml:lang="en">Field safety corrective action associated with an incident.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#FSCAStatus -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#FSCAStatus">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Controlled status of a field safety corrective action.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCAStatus</rdfs:label>
+        <skos:definition xml:lang="en">Controlled status of a field safety corrective action.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#FSCAType -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#FSCAType">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Controlled concept used to classify field safety corrective action types.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCAType</rdfs:label>
+        <skos:definition xml:lang="en">Controlled concept used to classify field safety corrective action types.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#HighRiskDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#HighRiskDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device inferred as high risk by a SWRL rule.</rdfs:comment>
+        <rdfs:label xml:lang="en">HighRiskDevice</rdfs:label>
+        <skos:definition xml:lang="en">Device inferred as high risk by a SWRL rule.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ImplantableActiveDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#ImplantableActiveDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device subclass for implantable active devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">ImplantableActiveDevice</rdfs:label>
+        <skos:definition xml:lang="en">Device subclass for implantable active devices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ImplantableDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#ImplantableDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device subclass for implantable devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">ImplantableDevice</rdfs:label>
+        <skos:definition xml:lang="en">Device subclass for implantable devices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#InSituCorrection -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#InSituCorrection">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:comment xml:lang="en">FSCA subclass for in situ corrections.</rdfs:comment>
+        <rdfs:label xml:lang="en">InSituCorrection</rdfs:label>
+        <skos:definition xml:lang="en">FSCA subclass for in situ corrections.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#InVitroDiagnosticDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#InVitroDiagnosticDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device subclass for in vitro diagnostic devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">InVitroDiagnosticDevice</rdfs:label>
+        <skos:definition xml:lang="en">Device subclass for in vitro diagnostic devices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Incident -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#Incident">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/eu-meddevice#involvesDevice"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/eu-meddevice#isAssociatedWithRisk"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Reported incident linked to a device and a risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+        <skos:definition xml:lang="en">Reported incident linked to a device and a risk.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#InfectionRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#InfectionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing infection risks.</rdfs:comment>
+        <rdfs:label xml:lang="en">InfectionRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing infection risks.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#InjuryRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#InjuryRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing patient injuries.</rdfs:comment>
+        <rdfs:label xml:lang="en">InjuryRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing patient injuries.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#InterferenceRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#InterferenceRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing electromagnetic or signal interference.</rdfs:comment>
+        <rdfs:label xml:lang="en">InterferenceRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing electromagnetic or signal interference.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#MalfunctionRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#MalfunctionRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing device malfunctions.</rdfs:comment>
+        <rdfs:label xml:lang="en">MalfunctionRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing device malfunctions.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Manufacturer -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#Manufacturer">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#ReportableEntity"/>
+        <rdfs:comment xml:lang="en">Organisation responsible for manufacturing a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manufacturer</rdfs:label>
+        <skos:definition xml:lang="en">Organisation responsible for manufacturing a device.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#MaterialRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#MaterialRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing material compatibility or degradation issues.</rdfs:comment>
+        <rdfs:label xml:lang="en">MaterialRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing material compatibility or degradation issues.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#MedicalCatalogueEntity -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">
+        <rdfs:comment xml:lang="en">Top-level class for the ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">MedicalCatalogueEntity</rdfs:label>
+        <skos:definition xml:lang="en">Top-level class for the ontology.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#NearMissIncident -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#NearMissIncident">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:comment xml:lang="en">Incident subclass for near miss incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">NearMissIncident</rdfs:label>
+        <skos:definition xml:lang="en">Incident subclass for near miss incidents.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ProbabilityLevel -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#ProbabilityLevel">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Controlled probability level for a risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">ProbabilityLevel</rdfs:label>
+        <skos:definition xml:lang="en">Controlled probability level for a risk.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#RadiationRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#RadiationRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing radiation-related issues.</rdfs:comment>
+        <rdfs:label xml:lang="en">RadiationRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing radiation-related issues.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Recall -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#Recall">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:comment xml:lang="en">FSCA subclass for recalls.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recall</rdfs:label>
+        <skos:definition xml:lang="en">FSCA subclass for recalls.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#RegulatoryFramework -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#RegulatoryFramework">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">European regulatory framework under which a device is registered.</rdfs:comment>
+        <rdfs:label xml:lang="en">RegulatoryFramework</rdfs:label>
+        <skos:definition xml:lang="en">European regulatory framework under which a device is registered.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ReportableEntity -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#ReportableEntity">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:comment xml:lang="en">Entity able to report incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">ReportableEntity</rdfs:label>
+        <skos:definition xml:lang="en">Entity able to report incidents.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Risk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#Risk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:comment xml:lang="en">Identified risk associated with a medical device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Risk</rdfs:label>
+        <skos:definition xml:lang="en">Identified risk associated with a medical device.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#RiskCategory -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#RiskCategory">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Controlled category grouping similar risks.</rdfs:comment>
+        <rdfs:label xml:lang="en">RiskCategory</rdfs:label>
+        <skos:definition xml:lang="en">Controlled category grouping similar risks.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#RiskClass -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#RiskClass">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Risk class assigned to a device according to MDR or IVDR.</rdfs:comment>
+        <rdfs:label xml:lang="en">RiskClass</rdfs:label>
+        <skos:definition xml:lang="en">Risk class assigned to a device according to MDR or IVDR.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#SafetyAlert -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#SafetyAlert">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:comment xml:lang="en">FSCA subclass for safety alerts.</rdfs:comment>
+        <rdfs:label xml:lang="en">SafetyAlert</rdfs:label>
+        <skos:definition xml:lang="en">FSCA subclass for safety alerts.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#SelfTestDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#SelfTestDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device subclass for self-test diagnostic devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">SelfTestDevice</rdfs:label>
+        <skos:definition xml:lang="en">Device subclass for self-test diagnostic devices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#SeriousIncident -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#SeriousIncident">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdfs:comment xml:lang="en">Incident subclass for serious incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">SeriousIncident</rdfs:label>
+        <skos:definition xml:lang="en">Incident subclass for serious incidents.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#SeverityLevel -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#SeverityLevel">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Controlled severity level for a risk.</rdfs:comment>
+        <rdfs:label xml:lang="en">SeverityLevel</rdfs:label>
+        <skos:definition xml:lang="en">Controlled severity level for a risk.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#SexCategory -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#SexCategory">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#MedicalCatalogueEntity"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">Controlled concept used to represent patient sex categories when reported in incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">SexCategory</rdfs:label>
+        <skos:definition xml:lang="en">Controlled concept used to represent patient sex categories when reported in incidents.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#SingleUseDevice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#SingleUseDevice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdfs:comment xml:lang="en">Device subclass for single-use devices.</rdfs:comment>
+        <rdfs:label xml:lang="en">SingleUseDevice</rdfs:label>
+        <skos:definition xml:lang="en">Device subclass for single-use devices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#SoftwareRisk -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#SoftwareRisk">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <rdfs:comment xml:lang="en">Risk subclass describing software failures or defects.</rdfs:comment>
+        <rdfs:label xml:lang="en">SoftwareRisk</rdfs:label>
+        <skos:definition xml:lang="en">Risk subclass describing software failures or defects.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#UserNotice -->
+
+
+    <owl:Class rdf:about="http://www.example.org/eu-meddevice#UserNotice">
+        <rdfs:subClassOf rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdfs:comment xml:lang="en">FSCA subclass for user notices.</rdfs:comment>
+        <rdfs:label xml:lang="en">UserNotice</rdfs:label>
+        <skos:definition xml:lang="en">FSCA subclass for user notices.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://dbpedia.org/resource/France -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/France">
+        <owl:sameAs rdf:resource="http://www.example.org/eu-meddevice#Country_France"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_France -->
+
+
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#Country_France"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Germany -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Germany">
+        <owl:sameAs rdf:resource="http://www.example.org/eu-meddevice#Country_Germany"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_Germany -->
+
+
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#Country_Germany"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Republic_of_Ireland -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Republic_of_Ireland">
+        <owl:sameAs rdf:resource="http://www.example.org/eu-meddevice#Country_Ireland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_Ireland -->
+
+
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#Country_Ireland"/>
+    
+
+
+    <!-- http://dbpedia.org/resource/Spain -->
+
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/resource/Spain">
+        <owl:sameAs rdf:resource="http://www.example.org/eu-meddevice#Country_Spain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_Spain -->
+
+
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#Country_Spain"/>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Authority_Health_Products_Regulatory_Authority_HPRA -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Authority_Health_Products_Regulatory_Authority_HPRA"/>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#ClassIII -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#ClassIII">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#RiskClass"/>
+        <rdfs:comment xml:lang="en">Risk class ClassIII used in the dataset.</rdfs:comment>
+        <rdfs:label xml:lang="en">ClassIII</rdfs:label>
+        <skos:definition xml:lang="en">Controlled risk class concept ClassIII.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_France -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Country_France">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Country"/>
+        <rdfs:comment xml:lang="en">Country individual for France.</rdfs:comment>
+        <rdfs:label xml:lang="en">France</rdfs:label>
+        <skos:definition xml:lang="en">Country concept for France.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_Germany -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Country_Germany">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Country"/>
+        <rdfs:comment xml:lang="en">Country individual for Germany.</rdfs:comment>
+        <rdfs:label xml:lang="en">Germany</rdfs:label>
+        <skos:definition xml:lang="en">Country concept for Germany.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_Ireland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Country_Ireland">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Country"/>
+        <rdfs:comment xml:lang="en">Country individual for Ireland.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ireland</rdfs:label>
+        <skos:definition xml:lang="en">Country concept for Ireland.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Country_Spain -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Country_Spain">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Country"/>
+        <rdfs:comment xml:lang="en">Country individual for Spain.</rdfs:comment>
+        <rdfs:label xml:lang="en">Spain</rdfs:label>
+        <skos:definition xml:lang="en">Country concept for Spain.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Critical -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Critical">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#SeverityLevel"/>
+        <rdfs:comment xml:lang="en">Severity level Critical.</rdfs:comment>
+        <rdfs:label xml:lang="en">Critical</rdfs:label>
+        <skos:definition xml:lang="en">Controlled severity level Critical.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Device_DEV-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Device_DEV-001">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#ImplantableActiveDevice"/>
+        <governedByFramework rdf:resource="http://www.example.org/eu-meddevice#MDR"/>
+        <hasManufacturer rdf:resource="http://www.example.org/eu-meddevice#Manufacturer_MAN-001"/>
+        <hasRiskClass rdf:resource="http://www.example.org/eu-meddevice#ClassIII"/>
+        <hasDescription>Device of type ImplantableActiveDevice registered under MDR with risk class ClassIII.</hasDescription>
+        <hasDeviceId>DEV-001</hasDeviceId>
+        <hasDeviceName>HeartMate 3 LVAD</hasDeviceName>
+        <hasIntendedPurpose>Ventricular assist device for end-stage heart failure</hasIntendedPurpose>
+        <hasUDIDI>(01)00380740009095</hasUDIDI>
+        <isActive rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isActive>
+        <isIVD rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isIVD>
+        <isImplantable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isImplantable>
+        <isReusable rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isReusable>
+        <rdfs:comment xml:lang="en">Device DEV-001 named HeartMate 3 LVAD imported from the source CSV.</rdfs:comment>
+        <rdfs:label xml:lang="en">HeartMate 3 LVAD</rdfs:label>
+        <skos:definition xml:lang="en">Device of type ImplantableActiveDevice registered under MDR with risk class ClassIII.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#FSCA_FSCA-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#FSCA_FSCA-001">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#SafetyAlert"/>
+        <addressesIncident rdf:resource="http://www.example.org/eu-meddevice#Incident_INC-001"/>
+        <hasFSCAStatus rdf:resource="http://www.example.org/eu-meddevice#Open"/>
+        <hasActionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-02-01</hasActionDate>
+        <hasCountriesAffected>EU-wide</hasCountriesAffected>
+        <hasDescription>Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.</hasDescription>
+        <hasDevicesAffected>850</hasDevicesAffected>
+        <hasFSCAId>FSCA-001</hasFSCAId>
+        <hasFSCAReference>EU-FSCA-2024-000001</hasFSCAReference>
+        <hasScope>All HeartMate 3 LVAD units implanted since 2020</hasScope>
+        <rdfs:comment xml:lang="en">FSCA FSCA-001 imported from the source CSV.</rdfs:comment>
+        <rdfs:label xml:lang="en">FSCA-001</rdfs:label>
+        <skos:definition xml:lang="en">Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Female -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Female">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#SexCategory"/>
+        <rdfs:comment xml:lang="en">Patient sex category Female.</rdfs:comment>
+        <rdfs:label xml:lang="en">Female</rdfs:label>
+        <skos:definition xml:lang="en">Controlled patient sex category Female.</skos:definition>
+        <skos:prefLabel xml:lang="en">Female</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Incident_INC-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Incident_INC-001">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#SeriousIncident"/>
+        <hasPatientSex rdf:resource="http://www.example.org/eu-meddevice#Male"/>
+        <involvesDevice rdf:resource="http://www.example.org/eu-meddevice#Device_DEV-001"/>
+        <isAssociatedWithRisk rdf:resource="http://www.example.org/eu-meddevice#Risk_RSK-003"/>
+        <reportedBy rdf:resource="http://www.example.org/eu-meddevice#Manufacturer_MAN-001"/>
+        <reportedInCountry rdf:resource="http://www.example.org/eu-meddevice#Country_Germany"/>
+        <hasCorrectiveActionTaken rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasCorrectiveActionTaken>
+        <hasDescription>Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</hasDescription>
+        <hasDetectionDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-10</hasDetectionDate>
+        <hasEventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-08</hasEventDate>
+        <hasIncidentId>INC-001</hasIncidentId>
+        <hasIncidentReference>EU-INC-2024-000001</hasIncidentReference>
+        <hasOutcome>Serious patient injury - embolic stroke</hasOutcome>
+        <hasPatientAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">58</hasPatientAge>
+        <hasReportDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-01-15</hasReportDate>
+        <rdfs:comment xml:lang="en">Incident INC-001 imported from the source CSV.</rdfs:comment>
+        <rdfs:label xml:lang="en">INC-001</rdfs:label>
+        <skos:definition xml:lang="en">Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Low -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Low">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#ProbabilityLevel"/>
+        <rdfs:comment xml:lang="en">Probability level Low.</rdfs:comment>
+        <rdfs:label xml:lang="en">Low</rdfs:label>
+        <skos:definition xml:lang="en">Controlled probability level Low.</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#MDR -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#MDR"/>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Male -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Male">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#SexCategory"/>
+        <rdfs:comment xml:lang="en">Patient sex category Male.</rdfs:comment>
+        <rdfs:label xml:lang="en">Male</rdfs:label>
+        <skos:definition xml:lang="en">Controlled patient sex category Male.</skos:definition>
+        <skos:prefLabel xml:lang="en">Male</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Manufacturer_MAN-001 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Manufacturer_MAN-001">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Manufacturer"/>
+        <locatedInCountry rdf:resource="http://www.example.org/eu-meddevice#Country_Ireland"/>
+        <supervisedBy rdf:resource="http://www.example.org/eu-meddevice#Authority_Health_Products_Regulatory_Authority_HPRA"/>
+        <hasAuthorizationNumber>IE/2017/001234</hasAuthorizationNumber>
+        <hasContactEmail>regulatory@medtronic.com</hasContactEmail>
+        <hasDescription>Manufacturer established in Ireland and supervised by Health Products Regulatory Authority (HPRA).</hasDescription>
+        <hasEUDAMEDSRN>SRN-IE-MED-0001</hasEUDAMEDSRN>
+        <hasManufacturerId>MAN-001</hasManufacturerId>
+        <hasName>Medtronic plc</hasName>
+        <rdfs:comment xml:lang="en">Manufacturer Medtronic plc from the source CSV.</rdfs:comment>
+        <rdfs:label xml:lang="en">Medtronic plc</rdfs:label>
+        <skos:definition xml:lang="en">Manufacturer established in Ireland and supervised by Health Products Regulatory Authority (HPRA).</skos:definition>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Open -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Open"/>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#RiskCategory_Patient_Harm -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#RiskCategory_Patient_Harm"/>
+    
+
+
+    <!-- http://www.example.org/eu-meddevice#Risk_RSK-003 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.example.org/eu-meddevice#Risk_RSK-003">
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#InjuryRisk"/>
+        <rdf:type rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+        <hasProbability rdf:resource="http://www.example.org/eu-meddevice#Low"/>
+        <hasRiskCategory rdf:resource="http://www.example.org/eu-meddevice#RiskCategory_Patient_Harm"/>
+        <hasSeverity rdf:resource="http://www.example.org/eu-meddevice#Critical"/>
+        <hasDescription>Thrombus formation on device surface causing embolic events</hasDescription>
+        <hasIMDRFCode>A0201</hasIMDRFCode>
+        <hasRiskId>RSK-003</hasRiskId>
+        <hasRiskName>Thrombosis - device-related</hasRiskName>
+        <rdfs:comment xml:lang="en">Risk RSK-003 imported from the source CSV.</rdfs:comment>
+        <rdfs:label xml:lang="en">Thrombosis - device-related</rdfs:label>
+        <skos:definition xml:lang="en">Thrombus formation on device surface causing embolic events</skos:definition>
+    </owl:NamedIndividual>
+    <rdf:Description rdf:nodeID="genid7">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_i"/>
+        <swrl:argument2 rdf:resource="http://www.example.org/eu-meddevice#var_d"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#involvesDevice"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid8">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_d"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#HighRiskDevice"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_i"/>
+        <swrl:argument2 rdf:resource="http://www.example.org/eu-meddevice#var_d"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#involvesDevice"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid10">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_f"/>
+        <swrl:argument2 rdf:resource="http://www.example.org/eu-meddevice#var_d"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#affectsDevice"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid11">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_f"/>
+        <swrl:argument2 rdf:resource="http://www.example.org/eu-meddevice#var_i"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#addressesIncident"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid12">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_i"/>
+        <swrl:argument2 rdf:resource="http://www.example.org/eu-meddevice#var_r"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#isAssociatedWithRisk"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid13">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_i"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid14">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_d"/>
+        <swrl:argument2 rdf:resource="http://www.example.org/eu-meddevice#ClassIII"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#hasRiskClass"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid15">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_d"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid16">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_f"/>
+        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid17">
+        <swrl:argument1 rdf:resource="http://www.example.org/eu-meddevice#var_d"/>
+        <swrl:argument2 rdf:resource="http://www.example.org/eu-meddevice#var_r"/>
+        <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#hasRelatedRisk"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#Rule_DeviceHasRelatedRisk">
+        <swrl:body>
+            <rdf:Description/>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description/>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#Rule_FSCAAffectsDevice">
+        <swrl:body>
+            <rdf:Description/>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description/>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#Rule_HighRiskDevice_ClassIII">
+        <swrl:body>
+            <rdf:Description/>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description/>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#var_d">
+        <rdfs:comment xml:lang="en">SWRL variable d.</rdfs:comment>
+        <rdfs:label xml:lang="en">d</rdfs:label>
+        <swrl:varName>d</swrl:varName>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#var_f">
+        <rdfs:comment xml:lang="en">SWRL variable f.</rdfs:comment>
+        <rdfs:label xml:lang="en">f</rdfs:label>
+        <swrl:varName>f</swrl:varName>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#var_i">
+        <rdfs:comment xml:lang="en">SWRL variable i.</rdfs:comment>
+        <rdfs:label xml:lang="en">i</rdfs:label>
+        <swrl:varName>i</swrl:varName>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.example.org/eu-meddevice#var_r">
+        <rdfs:comment xml:lang="en">SWRL variable r.</rdfs:comment>
+        <rdfs:label xml:lang="en">r</rdfs:label>
+        <swrl:varName>r</swrl:varName>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#FSCA"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#addressesIncident"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#f"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#i"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#involvesDevice"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#i"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#Device"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#Incident"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#i"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.example.org/eu-meddevice#isAssociatedWithRisk"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#i"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#r"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.example.org/eu-meddevice#Risk"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

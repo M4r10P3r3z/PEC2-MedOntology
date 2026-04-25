@@ -1,0 +1,3068 @@
+<h2 id="crossreference" class="list">Cross-reference for EU High-Risk Medical Devices and IVD Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by EU High-Risk Medical Devices and IVD Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#ActiveDevice" title="http://www.example.org/eu-meddevice#ActiveDevice">ActiveDevice</a></li>
+  <li><a href="#ActiveImplant" title="http://www.example.org/eu-meddevice#ActiveImplant">ActiveImplant</a></li>
+  <li><a href="#CompetentAuthority" title="http://www.example.org/eu-meddevice#CompetentAuthority">CompetentAuthority</a></li>
+  <li><a href="#ContaminationRisk" title="http://www.example.org/eu-meddevice#ContaminationRisk">ContaminationRisk</a></li>
+  <li><a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a></li>
+  <li><a href="#CybersecurityRisk" title="http://www.example.org/eu-meddevice#CybersecurityRisk">CybersecurityRisk</a></li>
+  <li><a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a></li>
+  <li><a href="#DeviceType" title="http://www.example.org/eu-meddevice#DeviceType">DeviceType</a></li>
+  <li><a href="#DiagnosticRisk" title="http://www.example.org/eu-meddevice#DiagnosticRisk">DiagnosticRisk</a></li>
+  <li><a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a></li>
+  <li><a href="#FSCAStatus" title="http://www.example.org/eu-meddevice#FSCAStatus">FSCAStatus</a></li>
+  <li><a href="#FSCAType" title="http://www.example.org/eu-meddevice#FSCAType">FSCAType</a></li>
+  <li><a href="#HighRiskDevice" title="http://www.example.org/eu-meddevice#HighRiskDevice">HighRiskDevice</a></li>
+  <li><a href="#ImplantableActiveDevice" title="http://www.example.org/eu-meddevice#ImplantableActiveDevice">ImplantableActiveDevice</a></li>
+  <li><a href="#ImplantableDevice" title="http://www.example.org/eu-meddevice#ImplantableDevice">ImplantableDevice</a></li>
+  <li><a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a></li>
+  <li><a href="#InfectionRisk" title="http://www.example.org/eu-meddevice#InfectionRisk">InfectionRisk</a></li>
+  <li><a href="#InjuryRisk" title="http://www.example.org/eu-meddevice#InjuryRisk">InjuryRisk</a></li>
+  <li><a href="#InSituCorrection" title="http://www.example.org/eu-meddevice#InSituCorrection">InSituCorrection</a></li>
+  <li><a href="#InterferenceRisk" title="http://www.example.org/eu-meddevice#InterferenceRisk">InterferenceRisk</a></li>
+  <li><a href="#InVitroDiagnosticDevice" title="http://www.example.org/eu-meddevice#InVitroDiagnosticDevice">InVitroDiagnosticDevice</a></li>
+  <li><a href="#MalfunctionRisk" title="http://www.example.org/eu-meddevice#MalfunctionRisk">MalfunctionRisk</a></li>
+  <li><a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a></li>
+  <li><a href="#MaterialRisk" title="http://www.example.org/eu-meddevice#MaterialRisk">MaterialRisk</a></li>
+  <li><a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a></li>
+  <li><a href="#NearMissIncident" title="http://www.example.org/eu-meddevice#NearMissIncident">NearMissIncident</a></li>
+  <li><a href="#ProbabilityLevel" title="http://www.example.org/eu-meddevice#ProbabilityLevel">ProbabilityLevel</a></li>
+  <li><a href="#RadiationRisk" title="http://www.example.org/eu-meddevice#RadiationRisk">RadiationRisk</a></li>
+  <li><a href="#Recall" title="http://www.example.org/eu-meddevice#Recall">Recall</a></li>
+  <li><a href="#RegulatoryFramework" title="http://www.example.org/eu-meddevice#RegulatoryFramework">RegulatoryFramework</a></li>
+  <li><a href="#ReportableEntity" title="http://www.example.org/eu-meddevice#ReportableEntity">ReportableEntity</a></li>
+  <li><a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a></li>
+  <li><a href="#RiskCategory" title="http://www.example.org/eu-meddevice#RiskCategory">RiskCategory</a></li>
+  <li><a href="#RiskClass" title="http://www.example.org/eu-meddevice#RiskClass">RiskClass</a></li>
+  <li><a href="#SafetyAlert" title="http://www.example.org/eu-meddevice#SafetyAlert">SafetyAlert</a></li>
+  <li><a href="#SelfTestDevice" title="http://www.example.org/eu-meddevice#SelfTestDevice">SelfTestDevice</a></li>
+  <li><a href="#SeriousIncident" title="http://www.example.org/eu-meddevice#SeriousIncident">SeriousIncident</a></li>
+  <li><a href="#SeverityLevel" title="http://www.example.org/eu-meddevice#SeverityLevel">SeverityLevel</a></li>
+  <li><a href="#SexCategory" title="http://www.example.org/eu-meddevice#SexCategory">SexCategory</a></li>
+  <li><a href="#SingleUseDevice" title="http://www.example.org/eu-meddevice#SingleUseDevice">SingleUseDevice</a></li>
+  <li><a href="#SoftwareRisk" title="http://www.example.org/eu-meddevice#SoftwareRisk">SoftwareRisk</a></li>
+  <li><a href="#UserNotice" title="http://www.example.org/eu-meddevice#UserNotice">UserNotice</a></li>
+ </ul>
+ <div class="entity" id="ActiveDevice">
+  <h3>ActiveDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ActiveDevice</p>
+  <div class="comment">
+   <span class="markdown">Device subclass for active devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device subclass for active devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ActiveImplant">
+  <h3>ActiveImplant<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ActiveImplant</p>
+  <div class="comment">
+   <span class="markdown">Device subclass for active implant devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device subclass for active implant devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CompetentAuthority">
+  <h3>CompetentAuthority<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#CompetentAuthority</p>
+  <div class="comment">
+   <span class="markdown">National competent authority supervising manufacturers or products.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">National competent authority supervising manufacturers or products.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#supervisedBy" title="http://www.example.org/eu-meddevice#supervisedBy">supervisedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ContaminationRisk">
+  <h3>ContaminationRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ContaminationRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing contamination issues.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing contamination issues.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country">
+  <h3>Country<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Country</p>
+  <div class="comment">
+   <span class="markdown">Country relevant to manufacturers or incidents.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Country relevant to manufacturers or incidents.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#locatedInCountry" title="http://www.example.org/eu-meddevice#locatedInCountry">locatedInCountry</a> <sup class="type-op" title="object property">op</sup>, <a href="#reportedInCountry" title="http://www.example.org/eu-meddevice#reportedInCountry">reportedInCountry</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Country_France" title="http://www.example.org/eu-meddevice#Country_France">France</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Country_Germany" title="http://www.example.org/eu-meddevice#Country_Germany">Germany</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Country_Ireland" title="http://www.example.org/eu-meddevice#Country_Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Country_Spain" title="http://www.example.org/eu-meddevice#Country_Spain">Spain</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="CybersecurityRisk">
+  <h3>CybersecurityRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#CybersecurityRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing cybersecurity threats.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing cybersecurity threats.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Device">
+  <h3>Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Device</p>
+  <div class="comment">
+   <span class="markdown">Medical device or in vitro diagnostic product registered in the catalogue.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Medical device or in vitro diagnostic product registered in the catalogue.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ActiveDevice" title="http://www.example.org/eu-meddevice#ActiveDevice">ActiveDevice</a> <sup class="type-c" title="class">c</sup>, <a href="#ActiveImplant" title="http://www.example.org/eu-meddevice#ActiveImplant">ActiveImplant</a> <sup class="type-c" title="class">c</sup>, <a href="#HighRiskDevice" title="http://www.example.org/eu-meddevice#HighRiskDevice">HighRiskDevice</a> <sup class="type-c" title="class">c</sup>, <a href="#ImplantableActiveDevice" title="http://www.example.org/eu-meddevice#ImplantableActiveDevice">ImplantableActiveDevice</a> <sup class="type-c" title="class">c</sup>, <a href="#ImplantableDevice" title="http://www.example.org/eu-meddevice#ImplantableDevice">ImplantableDevice</a> <sup class="type-c" title="class">c</sup>, <a href="#InVitroDiagnosticDevice" title="http://www.example.org/eu-meddevice#InVitroDiagnosticDevice">InVitroDiagnosticDevice</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfTestDevice" title="http://www.example.org/eu-meddevice#SelfTestDevice">SelfTestDevice</a> <sup class="type-c" title="class">c</sup>, <a href="#SingleUseDevice" title="http://www.example.org/eu-meddevice#SingleUseDevice">SingleUseDevice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#governedByFramework" title="http://www.example.org/eu-meddevice#governedByFramework">governedByFramework</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasDeviceId" title="http://www.example.org/eu-meddevice#hasDeviceId">hasDeviceId</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDeviceName" title="http://www.example.org/eu-meddevice#hasDeviceName">hasDeviceName</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIntendedPurpose" title="http://www.example.org/eu-meddevice#hasIntendedPurpose">hasIntendedPurpose</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasManufacturer" title="http://www.example.org/eu-meddevice#hasManufacturer">hasManufacturer</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRelatedRisk" title="http://www.example.org/eu-meddevice#hasRelatedRisk">hasRelatedRisk</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRiskClass" title="http://www.example.org/eu-meddevice#hasRiskClass">hasRiskClass</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasUDIDI" title="http://www.example.org/eu-meddevice#hasUDIDI">hasUDIDI</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isActive" title="http://www.example.org/eu-meddevice#isActive">isActive</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isIVD" title="http://www.example.org/eu-meddevice#isIVD">isIVD</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isImplantable" title="http://www.example.org/eu-meddevice#isImplantable">isImplantable</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isReusable" title="http://www.example.org/eu-meddevice#isReusable">isReusable</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#affectsDevice" title="http://www.example.org/eu-meddevice#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup>, <a href="#involvesDevice" title="http://www.example.org/eu-meddevice#involvesDevice">involvesDevice</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Device_DEV-001" title="http://www.example.org/eu-meddevice#Device_DEV-001">HeartMate 3 LVAD</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DeviceType">
+  <h3>DeviceType<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#DeviceType</p>
+  <div class="comment">
+   <span class="markdown">Controlled concept used to classify the type of medical device.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled concept used to classify the type of medical device.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="DiagnosticRisk">
+  <h3>DiagnosticRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#DiagnosticRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing diagnostic errors or failures.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing diagnostic errors or failures.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA">
+  <h3>FSCA<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#FSCA</p>
+  <div class="comment">
+   <span class="markdown">Field safety corrective action associated with an incident.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Field safety corrective action associated with an incident.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#InSituCorrection" title="http://www.example.org/eu-meddevice#InSituCorrection">InSituCorrection</a> <sup class="type-c" title="class">c</sup>, <a href="#Recall" title="http://www.example.org/eu-meddevice#Recall">Recall</a> <sup class="type-c" title="class">c</sup>, <a href="#SafetyAlert" title="http://www.example.org/eu-meddevice#SafetyAlert">SafetyAlert</a> <sup class="type-c" title="class">c</sup>, <a href="#UserNotice" title="http://www.example.org/eu-meddevice#UserNotice">UserNotice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#addressesIncident" title="http://www.example.org/eu-meddevice#addressesIncident">addressesIncident</a> <sup class="type-op" title="object property">op</sup>, <a href="#affectsDevice" title="http://www.example.org/eu-meddevice#affectsDevice">affectsDevice</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasActionDate" title="http://www.example.org/eu-meddevice#hasActionDate">hasActionDate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasClosureDate" title="http://www.example.org/eu-meddevice#hasClosureDate">hasClosureDate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCountriesAffected" title="http://www.example.org/eu-meddevice#hasCountriesAffected">hasCountriesAffected</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDevicesAffected" title="http://www.example.org/eu-meddevice#hasDevicesAffected">hasDevicesAffected</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFSCAId" title="http://www.example.org/eu-meddevice#hasFSCAId">hasFSCAId</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFSCAReference" title="http://www.example.org/eu-meddevice#hasFSCAReference">hasFSCAReference</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasFSCAStatus" title="http://www.example.org/eu-meddevice#hasFSCAStatus">hasFSCAStatus</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasScope" title="http://www.example.org/eu-meddevice#hasScope">hasScope</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FSCA_FSCA-001" title="http://www.example.org/eu-meddevice#FSCA_FSCA-001">FSCA-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCAStatus">
+  <h3>FSCAStatus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#FSCAStatus</p>
+  <div class="comment">
+   <span class="markdown">Controlled status of a field safety corrective action.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled status of a field safety corrective action.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasFSCAStatus" title="http://www.example.org/eu-meddevice#hasFSCAStatus">hasFSCAStatus</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCAType">
+  <h3>FSCAType<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#FSCAType</p>
+  <div class="comment">
+   <span class="markdown">Controlled concept used to classify field safety corrective action types.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled concept used to classify field safety corrective action types.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="HighRiskDevice">
+  <h3>HighRiskDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#HighRiskDevice</p>
+  <div class="comment">
+   <span class="markdown">Device inferred as high risk by a SWRL rule.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device inferred as high risk by a SWRL rule.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ImplantableActiveDevice">
+  <h3>ImplantableActiveDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ImplantableActiveDevice</p>
+  <div class="comment">
+   <span class="markdown">Device subclass for implantable active devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device subclass for implantable active devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Device_DEV-001" title="http://www.example.org/eu-meddevice#Device_DEV-001">HeartMate 3 LVAD</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ImplantableDevice">
+  <h3>ImplantableDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ImplantableDevice</p>
+  <div class="comment">
+   <span class="markdown">Device subclass for implantable devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device subclass for implantable devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Incident">
+  <h3>Incident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Incident</p>
+  <div class="comment">
+   <span class="markdown">Reported incident linked to a device and a risk.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Reported incident linked to a device and a risk.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#NearMissIncident" title="http://www.example.org/eu-meddevice#NearMissIncident">NearMissIncident</a> <sup class="type-c" title="class">c</sup>, <a href="#SeriousIncident" title="http://www.example.org/eu-meddevice#SeriousIncident">SeriousIncident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCorrectiveActionTaken" title="http://www.example.org/eu-meddevice#hasCorrectiveActionTaken">hasCorrectiveActionTaken</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDetectionDate" title="http://www.example.org/eu-meddevice#hasDetectionDate">hasDetectionDate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventDate" title="http://www.example.org/eu-meddevice#hasEventDate">hasEventDate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentId" title="http://www.example.org/eu-meddevice#hasIncidentId">hasIncidentId</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentReference" title="http://www.example.org/eu-meddevice#hasIncidentReference">hasIncidentReference</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasOutcome" title="http://www.example.org/eu-meddevice#hasOutcome">hasOutcome</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPatientAge" title="http://www.example.org/eu-meddevice#hasPatientAge">hasPatientAge</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPatientSex" title="http://www.example.org/eu-meddevice#hasPatientSex">hasPatientSex</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasReportDate" title="http://www.example.org/eu-meddevice#hasReportDate">hasReportDate</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#involvesDevice" title="http://www.example.org/eu-meddevice#involvesDevice">involvesDevice</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAssociatedWithRisk" title="http://www.example.org/eu-meddevice#isAssociatedWithRisk">isAssociatedWithRisk</a> <sup class="type-op" title="object property">op</sup>, <a href="#reportedBy" title="http://www.example.org/eu-meddevice#reportedBy">reportedBy</a> <sup class="type-op" title="object property">op</sup>, <a href="#reportedInCountry" title="http://www.example.org/eu-meddevice#reportedInCountry">reportedInCountry</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#addressesIncident" title="http://www.example.org/eu-meddevice#addressesIncident">addressesIncident</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Incident_INC-001" title="http://www.example.org/eu-meddevice#Incident_INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InfectionRisk">
+  <h3>InfectionRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#InfectionRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing infection risks.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing infection risks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InjuryRisk">
+  <h3>InjuryRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#InjuryRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing patient injuries.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing patient injuries.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Risk_RSK-003" title="http://www.example.org/eu-meddevice#Risk_RSK-003">Thrombosis - device-related</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InSituCorrection">
+  <h3>InSituCorrection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#InSituCorrection</p>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for in situ corrections.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for in situ corrections.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InterferenceRisk">
+  <h3>InterferenceRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#InterferenceRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing electromagnetic or signal interference.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing electromagnetic or signal interference.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="InVitroDiagnosticDevice">
+  <h3>InVitroDiagnosticDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#InVitroDiagnosticDevice</p>
+  <div class="comment">
+   <span class="markdown">Device subclass for in vitro diagnostic devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device subclass for in vitro diagnostic devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MalfunctionRisk">
+  <h3>MalfunctionRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#MalfunctionRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing device malfunctions.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing device malfunctions.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Manufacturer">
+  <h3>Manufacturer<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Manufacturer</p>
+  <div class="comment">
+   <span class="markdown">Organisation responsible for manufacturing a device.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Organisation responsible for manufacturing a device.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>, <a href="#ReportableEntity" title="http://www.example.org/eu-meddevice#ReportableEntity">ReportableEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasAuthorizationNumber" title="http://www.example.org/eu-meddevice#hasAuthorizationNumber">hasAuthorizationNumber</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasContactEmail" title="http://www.example.org/eu-meddevice#hasContactEmail">hasContactEmail</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEUDAMEDSRN" title="http://www.example.org/eu-meddevice#hasEUDAMEDSRN">hasEUDAMEDSRN</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasManufacturerId" title="http://www.example.org/eu-meddevice#hasManufacturerId">hasManufacturerId</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasName" title="http://www.example.org/eu-meddevice#hasName">hasName</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#locatedInCountry" title="http://www.example.org/eu-meddevice#locatedInCountry">locatedInCountry</a> <sup class="type-op" title="object property">op</sup>, <a href="#supervisedBy" title="http://www.example.org/eu-meddevice#supervisedBy">supervisedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/eu-meddevice#hasManufacturer">hasManufacturer</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Manufacturer_MAN-001" title="http://www.example.org/eu-meddevice#Manufacturer_MAN-001">Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MaterialRisk">
+  <h3>MaterialRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#MaterialRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing material compatibility or degradation issues.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing material compatibility or degradation issues.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="MedicalCatalogueEntity">
+  <h3>MedicalCatalogueEntity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#MedicalCatalogueEntity</p>
+  <div class="comment">
+   <span class="markdown">Top-level class for the ontology.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Top-level class for the ontology.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#CompetentAuthority" title="http://www.example.org/eu-meddevice#CompetentAuthority">CompetentAuthority</a> <sup class="type-c" title="class">c</sup>, <a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a> <sup class="type-c" title="class">c</sup>, <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>, <a href="#DeviceType" title="http://www.example.org/eu-meddevice#DeviceType">DeviceType</a> <sup class="type-c" title="class">c</sup>, <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>, <a href="#FSCAStatus" title="http://www.example.org/eu-meddevice#FSCAStatus">FSCAStatus</a> <sup class="type-c" title="class">c</sup>, <a href="#FSCAType" title="http://www.example.org/eu-meddevice#FSCAType">FSCAType</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>, <a href="#ProbabilityLevel" title="http://www.example.org/eu-meddevice#ProbabilityLevel">ProbabilityLevel</a> <sup class="type-c" title="class">c</sup>, <a href="#RegulatoryFramework" title="http://www.example.org/eu-meddevice#RegulatoryFramework">RegulatoryFramework</a> <sup class="type-c" title="class">c</sup>, <a href="#ReportableEntity" title="http://www.example.org/eu-meddevice#ReportableEntity">ReportableEntity</a> <sup class="type-c" title="class">c</sup>, <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>, <a href="#RiskCategory" title="http://www.example.org/eu-meddevice#RiskCategory">RiskCategory</a> <sup class="type-c" title="class">c</sup>, <a href="#RiskClass" title="http://www.example.org/eu-meddevice#RiskClass">RiskClass</a> <sup class="type-c" title="class">c</sup>, <a href="#SeverityLevel" title="http://www.example.org/eu-meddevice#SeverityLevel">SeverityLevel</a> <sup class="type-c" title="class">c</sup>, <a href="#SexCategory" title="http://www.example.org/eu-meddevice#SexCategory">SexCategory</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasDescription" title="http://www.example.org/eu-meddevice#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isSubclassifiedUnder" title="http://www.example.org/eu-meddevice#isSubclassifiedUnder">isSubclassifiedUnder</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#isSubclassifiedUnder" title="http://www.example.org/eu-meddevice#isSubclassifiedUnder">isSubclassifiedUnder</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="NearMissIncident">
+  <h3>NearMissIncident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#NearMissIncident</p>
+  <div class="comment">
+   <span class="markdown">Incident subclass for near miss incidents.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Incident subclass for near miss incidents.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ProbabilityLevel">
+  <h3>ProbabilityLevel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ProbabilityLevel</p>
+  <div class="comment">
+   <span class="markdown">Controlled probability level for a risk.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled probability level for a risk.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasProbability" title="http://www.example.org/eu-meddevice#hasProbability">hasProbability</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Low" title="http://www.example.org/eu-meddevice#Low">Low</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RadiationRisk">
+  <h3>RadiationRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#RadiationRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing radiation-related issues.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing radiation-related issues.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Recall">
+  <h3>Recall<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Recall</p>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for recalls.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for recalls.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RegulatoryFramework">
+  <h3>RegulatoryFramework<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#RegulatoryFramework</p>
+  <div class="comment">
+   <span class="markdown">European regulatory framework under which a device is registered.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">European regulatory framework under which a device is registered.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#governedByFramework" title="http://www.example.org/eu-meddevice#governedByFramework">governedByFramework</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="ReportableEntity">
+  <h3>ReportableEntity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ReportableEntity</p>
+  <div class="comment">
+   <span class="markdown">Entity able to report incidents.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Entity able to report incidents.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#reportedBy" title="http://www.example.org/eu-meddevice#reportedBy">reportedBy</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Risk">
+  <h3>Risk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Risk</p>
+  <div class="comment">
+   <span class="markdown">Identified risk associated with a medical device.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Identified risk associated with a medical device.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#ContaminationRisk" title="http://www.example.org/eu-meddevice#ContaminationRisk">ContaminationRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#CybersecurityRisk" title="http://www.example.org/eu-meddevice#CybersecurityRisk">CybersecurityRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#DiagnosticRisk" title="http://www.example.org/eu-meddevice#DiagnosticRisk">DiagnosticRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#InfectionRisk" title="http://www.example.org/eu-meddevice#InfectionRisk">InfectionRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#InjuryRisk" title="http://www.example.org/eu-meddevice#InjuryRisk">InjuryRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#InterferenceRisk" title="http://www.example.org/eu-meddevice#InterferenceRisk">InterferenceRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#MalfunctionRisk" title="http://www.example.org/eu-meddevice#MalfunctionRisk">MalfunctionRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#MaterialRisk" title="http://www.example.org/eu-meddevice#MaterialRisk">MaterialRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#RadiationRisk" title="http://www.example.org/eu-meddevice#RadiationRisk">RadiationRisk</a> <sup class="type-c" title="class">c</sup>, <a href="#SoftwareRisk" title="http://www.example.org/eu-meddevice#SoftwareRisk">SoftwareRisk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasIMDRFCode" title="http://www.example.org/eu-meddevice#hasIMDRFCode">hasIMDRFCode</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasProbability" title="http://www.example.org/eu-meddevice#hasProbability">hasProbability</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRiskCategory" title="http://www.example.org/eu-meddevice#hasRiskCategory">hasRiskCategory</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasRiskId" title="http://www.example.org/eu-meddevice#hasRiskId">hasRiskId</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasRiskName" title="http://www.example.org/eu-meddevice#hasRiskName">hasRiskName</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSeverity" title="http://www.example.org/eu-meddevice#hasSeverity">hasSeverity</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasRelatedRisk" title="http://www.example.org/eu-meddevice#hasRelatedRisk">hasRelatedRisk</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAssociatedWithRisk" title="http://www.example.org/eu-meddevice#isAssociatedWithRisk">isAssociatedWithRisk</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Risk_RSK-003" title="http://www.example.org/eu-meddevice#Risk_RSK-003">Thrombosis - device-related</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RiskCategory">
+  <h3>RiskCategory<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#RiskCategory</p>
+  <div class="comment">
+   <span class="markdown">Controlled category grouping similar risks.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled category grouping similar risks.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasRiskCategory" title="http://www.example.org/eu-meddevice#hasRiskCategory">hasRiskCategory</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="RiskClass">
+  <h3>RiskClass<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#RiskClass</p>
+  <div class="comment">
+   <span class="markdown">Risk class assigned to a device according to MDR or IVDR.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk class assigned to a device according to MDR or IVDR.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasRiskClass" title="http://www.example.org/eu-meddevice#hasRiskClass">hasRiskClass</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#ClassIII" title="http://www.example.org/eu-meddevice#ClassIII">ClassIII</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SafetyAlert">
+  <h3>SafetyAlert<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#SafetyAlert</p>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for safety alerts.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for safety alerts.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#FSCA_FSCA-001" title="http://www.example.org/eu-meddevice#FSCA_FSCA-001">FSCA-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SelfTestDevice">
+  <h3>SelfTestDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#SelfTestDevice</p>
+  <div class="comment">
+   <span class="markdown">Device subclass for self-test diagnostic devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device subclass for self-test diagnostic devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SeriousIncident">
+  <h3>SeriousIncident<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#SeriousIncident</p>
+  <div class="comment">
+   <span class="markdown">Incident subclass for serious incidents.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Incident subclass for serious incidents.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Incident_INC-001" title="http://www.example.org/eu-meddevice#Incident_INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SeverityLevel">
+  <h3>SeverityLevel<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#SeverityLevel</p>
+  <div class="comment">
+   <span class="markdown">Controlled severity level for a risk.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled severity level for a risk.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasSeverity" title="http://www.example.org/eu-meddevice#hasSeverity">hasSeverity</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Critical" title="http://www.example.org/eu-meddevice#Critical">Critical</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SexCategory">
+  <h3>SexCategory<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#SexCategory</p>
+  <div class="comment">
+   <span class="markdown">Controlled concept used to represent patient sex categories when reported in incidents.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled concept used to represent patient sex categories when reported in incidents.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup>, <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasPatientSex" title="http://www.example.org/eu-meddevice#hasPatientSex">hasPatientSex</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#Female" title="http://www.example.org/eu-meddevice#Female">Female</a> <sup class="type-ni" title="named individual">ni</sup>, <a href="#Male" title="http://www.example.org/eu-meddevice#Male">Male</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SingleUseDevice">
+  <h3>SingleUseDevice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#SingleUseDevice</p>
+  <div class="comment">
+   <span class="markdown">Device subclass for single-use devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device subclass for single-use devices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="SoftwareRisk">
+  <h3>SoftwareRisk<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#SoftwareRisk</p>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing software failures or defects.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Risk subclass describing software failures or defects.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="UserNotice">
+  <h3>UserNotice<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#UserNotice</p>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for user notices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">FSCA subclass for user notices.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#addressesIncident" title="http://www.example.org/eu-meddevice#addressesIncident">addressesIncident</a></li>
+  <li><a href="#affectsDevice" title="http://www.example.org/eu-meddevice#affectsDevice">affectsDevice</a></li>
+  <li><a href="#governedByFramework" title="http://www.example.org/eu-meddevice#governedByFramework">governedByFramework</a></li>
+  <li><a href="#hasFSCAStatus" title="http://www.example.org/eu-meddevice#hasFSCAStatus">hasFSCAStatus</a></li>
+  <li><a href="#hasManufacturer" title="http://www.example.org/eu-meddevice#hasManufacturer">hasManufacturer</a></li>
+  <li><a href="#hasPatientSex" title="http://www.example.org/eu-meddevice#hasPatientSex">hasPatientSex</a></li>
+  <li><a href="#hasProbability" title="http://www.example.org/eu-meddevice#hasProbability">hasProbability</a></li>
+  <li><a href="#hasRelatedRisk" title="http://www.example.org/eu-meddevice#hasRelatedRisk">hasRelatedRisk</a></li>
+  <li><a href="#hasRiskCategory" title="http://www.example.org/eu-meddevice#hasRiskCategory">hasRiskCategory</a></li>
+  <li><a href="#hasRiskClass" title="http://www.example.org/eu-meddevice#hasRiskClass">hasRiskClass</a></li>
+  <li><a href="#hasSeverity" title="http://www.example.org/eu-meddevice#hasSeverity">hasSeverity</a></li>
+  <li><a href="#involvesDevice" title="http://www.example.org/eu-meddevice#involvesDevice">involvesDevice</a></li>
+  <li><a href="#isAssociatedWithRisk" title="http://www.example.org/eu-meddevice#isAssociatedWithRisk">isAssociatedWithRisk</a></li>
+  <li><a href="#isSubclassifiedUnder" title="http://www.example.org/eu-meddevice#isSubclassifiedUnder">isSubclassifiedUnder</a></li>
+  <li><a href="#locatedInCountry" title="http://www.example.org/eu-meddevice#locatedInCountry">locatedInCountry</a></li>
+  <li><a href="#reportedBy" title="http://www.example.org/eu-meddevice#reportedBy">reportedBy</a></li>
+  <li><a href="#reportedInCountry" title="http://www.example.org/eu-meddevice#reportedInCountry">reportedInCountry</a></li>
+  <li><a href="#supervisedBy" title="http://www.example.org/eu-meddevice#supervisedBy">supervisedBy</a></li>
+ </ul>
+ <div class="entity" id="addressesIncident">
+  <h3>addressesIncident<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#addressesIncident</p>
+  <div class="comment">
+   <span class="markdown">Links an FSCA to the incident it addresses.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links an FSCA to the incident it addresses.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="affectsDevice">
+  <h3>affectsDevice<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#affectsDevice</p>
+  <div class="comment">
+   <span class="markdown">Inferred property linking an FSCA to the device affected by the action.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Inferred property linking an FSCA to the device affected by the action.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="governedByFramework">
+  <h3>governedByFramework<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#governedByFramework</p>
+  <div class="comment">
+   <span class="markdown">Links a device to the regulatory framework under which it is registered.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a device to the regulatory framework under which it is registered.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RegulatoryFramework" title="http://www.example.org/eu-meddevice#RegulatoryFramework">RegulatoryFramework</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasFSCAStatus">
+  <h3>hasFSCAStatus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasFSCAStatus</p>
+  <div class="comment">
+   <span class="markdown">Links an FSCA to its status.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links an FSCA to its status.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#FSCAStatus" title="http://www.example.org/eu-meddevice#FSCAStatus">FSCAStatus</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasManufacturer">
+  <h3>hasManufacturer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasManufacturer</p>
+  <div class="comment">
+   <span class="markdown">Links a device to its manufacturer.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a device to its manufacturer.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPatientSex">
+  <h3>hasPatientSex<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasPatientSex</p>
+  <div class="comment">
+   <span class="markdown">Relates an incident to the patient sex category when available.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Relates an incident to the patient sex category when available.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SexCategory" title="http://www.example.org/eu-meddevice#SexCategory">SexCategory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasProbability">
+  <h3>hasProbability<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasProbability</p>
+  <div class="comment">
+   <span class="markdown">Links a risk to its probability level.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a risk to its probability level.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ProbabilityLevel" title="http://www.example.org/eu-meddevice#ProbabilityLevel">ProbabilityLevel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRelatedRisk">
+  <h3>hasRelatedRisk<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasRelatedRisk</p>
+  <div class="comment">
+   <span class="markdown">Inferred property linking a device to a risk mentioned in an incident.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Inferred property linking a device to a risk mentioned in an incident.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRiskCategory">
+  <h3>hasRiskCategory<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasRiskCategory</p>
+  <div class="comment">
+   <span class="markdown">Links a risk to its risk category.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a risk to its risk category.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RiskCategory" title="http://www.example.org/eu-meddevice#RiskCategory">RiskCategory</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRiskClass">
+  <h3>hasRiskClass<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasRiskClass</p>
+  <div class="comment">
+   <span class="markdown">Links a device to its risk class.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a device to its risk class.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#RiskClass" title="http://www.example.org/eu-meddevice#RiskClass">RiskClass</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasSeverity">
+  <h3>hasSeverity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasSeverity</p>
+  <div class="comment">
+   <span class="markdown">Links a risk to its severity level.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a risk to its severity level.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SeverityLevel" title="http://www.example.org/eu-meddevice#SeverityLevel">SeverityLevel</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="involvesDevice">
+  <h3>involvesDevice<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#involvesDevice</p>
+  <div class="comment">
+   <span class="markdown">Links an incident to the involved device.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links an incident to the involved device.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isAssociatedWithRisk">
+  <h3>isAssociatedWithRisk<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#isAssociatedWithRisk</p>
+  <div class="comment">
+   <span class="markdown">Links an incident to the related risk.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links an incident to the related risk.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isSubclassifiedUnder">
+  <h3>isSubclassifiedUnder<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#isSubclassifiedUnder</p>
+  <div class="comment">
+   <span class="markdown">Transitive property reused from Exercise 1 to represent transitive classification links between classification resources.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Transitive property reused from Exercise 1 to represent transitive classification links between classification resources.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> transitive</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="locatedInCountry">
+  <h3>locatedInCountry<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#locatedInCountry</p>
+  <div class="comment">
+   <span class="markdown">Links a manufacturer to its country.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a manufacturer to its country.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reportedBy">
+  <h3>reportedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#reportedBy</p>
+  <div class="comment">
+   <span class="markdown">Links an incident to the reporting entity.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links an incident to the reporting entity.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ReportableEntity" title="http://www.example.org/eu-meddevice#ReportableEntity">ReportableEntity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="reportedInCountry">
+  <h3>reportedInCountry<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#reportedInCountry</p>
+  <div class="comment">
+   <span class="markdown">Links an incident to the country where it was reported.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links an incident to the country where it was reported.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="supervisedBy">
+  <h3>supervisedBy<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#supervisedBy</p>
+  <div class="comment">
+   <span class="markdown">Links a manufacturer to its supervising competent authority.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Links a manufacturer to its supervising competent authority.</span>
+  </div>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#CompetentAuthority" title="http://www.example.org/eu-meddevice#CompetentAuthority">CompetentAuthority</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#hasActionDate" title="http://www.example.org/eu-meddevice#hasActionDate">hasActionDate</a></li>
+  <li><a href="#hasAuthorizationNumber" title="http://www.example.org/eu-meddevice#hasAuthorizationNumber">hasAuthorizationNumber</a></li>
+  <li><a href="#hasClosureDate" title="http://www.example.org/eu-meddevice#hasClosureDate">hasClosureDate</a></li>
+  <li><a href="#hasContactEmail" title="http://www.example.org/eu-meddevice#hasContactEmail">hasContactEmail</a></li>
+  <li><a href="#hasCorrectiveActionTaken" title="http://www.example.org/eu-meddevice#hasCorrectiveActionTaken">hasCorrectiveActionTaken</a></li>
+  <li><a href="#hasCountriesAffected" title="http://www.example.org/eu-meddevice#hasCountriesAffected">hasCountriesAffected</a></li>
+  <li><a href="#hasDescription" title="http://www.example.org/eu-meddevice#hasDescription">hasDescription</a></li>
+  <li><a href="#hasDetectionDate" title="http://www.example.org/eu-meddevice#hasDetectionDate">hasDetectionDate</a></li>
+  <li><a href="#hasDeviceId" title="http://www.example.org/eu-meddevice#hasDeviceId">hasDeviceId</a></li>
+  <li><a href="#hasDeviceName" title="http://www.example.org/eu-meddevice#hasDeviceName">hasDeviceName</a></li>
+  <li><a href="#hasDevicesAffected" title="http://www.example.org/eu-meddevice#hasDevicesAffected">hasDevicesAffected</a></li>
+  <li><a href="#hasEUDAMEDSRN" title="http://www.example.org/eu-meddevice#hasEUDAMEDSRN">hasEUDAMEDSRN</a></li>
+  <li><a href="#hasEventDate" title="http://www.example.org/eu-meddevice#hasEventDate">hasEventDate</a></li>
+  <li><a href="#hasFSCAId" title="http://www.example.org/eu-meddevice#hasFSCAId">hasFSCAId</a></li>
+  <li><a href="#hasFSCAReference" title="http://www.example.org/eu-meddevice#hasFSCAReference">hasFSCAReference</a></li>
+  <li><a href="#hasIMDRFCode" title="http://www.example.org/eu-meddevice#hasIMDRFCode">hasIMDRFCode</a></li>
+  <li><a href="#hasIncidentId" title="http://www.example.org/eu-meddevice#hasIncidentId">hasIncidentId</a></li>
+  <li><a href="#hasIncidentReference" title="http://www.example.org/eu-meddevice#hasIncidentReference">hasIncidentReference</a></li>
+  <li><a href="#hasIntendedPurpose" title="http://www.example.org/eu-meddevice#hasIntendedPurpose">hasIntendedPurpose</a></li>
+  <li><a href="#hasManufacturerId" title="http://www.example.org/eu-meddevice#hasManufacturerId">hasManufacturerId</a></li>
+  <li><a href="#hasName" title="http://www.example.org/eu-meddevice#hasName">hasName</a></li>
+  <li><a href="#hasOutcome" title="http://www.example.org/eu-meddevice#hasOutcome">hasOutcome</a></li>
+  <li><a href="#hasPatientAge" title="http://www.example.org/eu-meddevice#hasPatientAge">hasPatientAge</a></li>
+  <li><a href="#hasReportDate" title="http://www.example.org/eu-meddevice#hasReportDate">hasReportDate</a></li>
+  <li><a href="#hasRiskId" title="http://www.example.org/eu-meddevice#hasRiskId">hasRiskId</a></li>
+  <li><a href="#hasRiskName" title="http://www.example.org/eu-meddevice#hasRiskName">hasRiskName</a></li>
+  <li><a href="#hasScope" title="http://www.example.org/eu-meddevice#hasScope">hasScope</a></li>
+  <li><a href="#hasUDIDI" title="http://www.example.org/eu-meddevice#hasUDIDI">hasUDIDI</a></li>
+  <li><a href="#isActive" title="http://www.example.org/eu-meddevice#isActive">isActive</a></li>
+  <li><a href="#isImplantable" title="http://www.example.org/eu-meddevice#isImplantable">isImplantable</a></li>
+  <li><a href="#isIVD" title="http://www.example.org/eu-meddevice#isIVD">isIVD</a></li>
+  <li><a href="#isReusable" title="http://www.example.org/eu-meddevice#isReusable">isReusable</a></li>
+ </ul>
+ <div class="entity" id="hasActionDate">
+  <h3>hasActionDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasActionDate</p>
+  <div class="comment">
+   <span class="markdown">Stores the action date.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the action date.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAuthorizationNumber">
+  <h3>hasAuthorizationNumber<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasAuthorizationNumber</p>
+  <div class="comment">
+   <span class="markdown">Stores the manufacturer authorisation number.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the manufacturer authorisation number.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasClosureDate">
+  <h3>hasClosureDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasClosureDate</p>
+  <div class="comment">
+   <span class="markdown">Stores the closure date when available.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the closure date when available.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasContactEmail">
+  <h3>hasContactEmail<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasContactEmail</p>
+  <div class="comment">
+   <span class="markdown">Stores the regulatory contact email.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the regulatory contact email.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCorrectiveActionTaken">
+  <h3>hasCorrectiveActionTaken<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasCorrectiveActionTaken</p>
+  <div class="comment">
+   <span class="markdown">Indicates whether a corrective action was taken.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Indicates whether a corrective action was taken.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCountriesAffected">
+  <h3>hasCountriesAffected<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasCountriesAffected</p>
+  <div class="comment">
+   <span class="markdown">Stores the textual expression of affected countries.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the textual expression of affected countries.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDescription">
+  <h3>hasDescription<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasDescription</p>
+  <div class="comment">
+   <span class="markdown">Stores a textual description.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores a textual description.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#MedicalCatalogueEntity" title="http://www.example.org/eu-meddevice#MedicalCatalogueEntity">MedicalCatalogueEntity</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDetectionDate">
+  <h3>hasDetectionDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasDetectionDate</p>
+  <div class="comment">
+   <span class="markdown">Stores the detection date.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the detection date.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDeviceId">
+  <h3>hasDeviceId<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasDeviceId</p>
+  <div class="comment">
+   <span class="markdown">Stores the device identifier.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the device identifier.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDeviceName">
+  <h3>hasDeviceName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasDeviceName</p>
+  <div class="comment">
+   <span class="markdown">Stores the device commercial name.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the device commercial name.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasDevicesAffected">
+  <h3>hasDevicesAffected<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasDevicesAffected</p>
+  <div class="comment">
+   <span class="markdown">Stores the number or textual expression of affected devices.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the number or textual expression of affected devices.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEUDAMEDSRN">
+  <h3>hasEUDAMEDSRN<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasEUDAMEDSRN</p>
+  <div class="comment">
+   <span class="markdown">Stores the EUDAMED SRN.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the EUDAMED SRN.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEventDate">
+  <h3>hasEventDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasEventDate</p>
+  <div class="comment">
+   <span class="markdown">Stores the event date.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the event date.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasFSCAId">
+  <h3>hasFSCAId<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasFSCAId</p>
+  <div class="comment">
+   <span class="markdown">Stores the FSCA identifier.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the FSCA identifier.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasFSCAReference">
+  <h3>hasFSCAReference<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasFSCAReference</p>
+  <div class="comment">
+   <span class="markdown">Stores the EUDAMED FSCA reference.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the EUDAMED FSCA reference.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIMDRFCode">
+  <h3>hasIMDRFCode<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasIMDRFCode</p>
+  <div class="comment">
+   <span class="markdown">Stores the IMDRF code.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the IMDRF code.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIncidentId">
+  <h3>hasIncidentId<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasIncidentId</p>
+  <div class="comment">
+   <span class="markdown">Stores the incident identifier.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the incident identifier.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIncidentReference">
+  <h3>hasIncidentReference<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasIncidentReference</p>
+  <div class="comment">
+   <span class="markdown">Stores the EUDAMED incident reference.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the EUDAMED incident reference.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIntendedPurpose">
+  <h3>hasIntendedPurpose<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasIntendedPurpose</p>
+  <div class="comment">
+   <span class="markdown">Stores the intended purpose of a device.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the intended purpose of a device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasManufacturerId">
+  <h3>hasManufacturerId<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasManufacturerId</p>
+  <div class="comment">
+   <span class="markdown">Stores the manufacturer identifier.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the manufacturer identifier.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasName">
+  <h3>hasName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasName</p>
+  <div class="comment">
+   <span class="markdown">Stores a preferred name.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores a preferred name.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasOutcome">
+  <h3>hasOutcome<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasOutcome</p>
+  <div class="comment">
+   <span class="markdown">Stores the incident outcome.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the incident outcome.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasPatientAge">
+  <h3>hasPatientAge<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasPatientAge</p>
+  <div class="comment">
+   <span class="markdown">Stores the patient age when available.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the patient age when available.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasReportDate">
+  <h3>hasReportDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasReportDate</p>
+  <div class="comment">
+   <span class="markdown">Stores the report date.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the report date.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRiskId">
+  <h3>hasRiskId<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasRiskId</p>
+  <div class="comment">
+   <span class="markdown">Stores the risk identifier.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the risk identifier.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasRiskName">
+  <h3>hasRiskName<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasRiskName</p>
+  <div class="comment">
+   <span class="markdown">Stores the preferred risk name.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the preferred risk name.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasScope">
+  <h3>hasScope<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasScope</p>
+  <div class="comment">
+   <span class="markdown">Stores the textual scope of the FSCA.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the textual scope of the FSCA.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasUDIDI">
+  <h3>hasUDIDI<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#hasUDIDI</p>
+  <div class="comment">
+   <span class="markdown">Stores the UDI-DI code.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Stores the UDI-DI code.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isActive">
+  <h3>isActive<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#isActive</p>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is active.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is active.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isImplantable">
+  <h3>isImplantable<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#isImplantable</p>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is implantable.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is implantable.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isIVD">
+  <h3>isIVD<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#isIVD</p>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is an IVD.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is an IVD.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isReusable">
+  <h3>isReusable<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#isReusable</p>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is reusable.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Indicates whether the device is reusable.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#ClassIII" title="http://www.example.org/eu-meddevice#ClassIII">ClassIII</a></li>
+  <li><a href="#Critical" title="http://www.example.org/eu-meddevice#Critical">Critical</a></li>
+  <li><a href="#Female" title="http://www.example.org/eu-meddevice#Female">Female</a></li>
+  <li><a href="#http://dbpedia.org/resource/France" title="http://dbpedia.org/resource/France"> <span>France</span> </a></li>
+  <li><a href="#Country_France" title="http://www.example.org/eu-meddevice#Country_France">France</a></li>
+  <li><a href="#FSCA_FSCA-001" title="http://www.example.org/eu-meddevice#FSCA_FSCA-001">FSCA-001</a></li>
+  <li><a href="#http://dbpedia.org/resource/Germany" title="http://dbpedia.org/resource/Germany"> <span>Germany</span> </a></li>
+  <li><a href="#Country_Germany" title="http://www.example.org/eu-meddevice#Country_Germany">Germany</a></li>
+  <li><a href="#Device_DEV-001" title="http://www.example.org/eu-meddevice#Device_DEV-001">HeartMate 3 LVAD</a></li>
+  <li><a href="#Incident_INC-001" title="http://www.example.org/eu-meddevice#Incident_INC-001">INC-001</a></li>
+  <li><a href="#Country_Ireland" title="http://www.example.org/eu-meddevice#Country_Ireland">Ireland</a></li>
+  <li><a href="#Low" title="http://www.example.org/eu-meddevice#Low">Low</a></li>
+  <li><a href="#Male" title="http://www.example.org/eu-meddevice#Male">Male</a></li>
+  <li><a href="#Manufacturer_MAN-001" title="http://www.example.org/eu-meddevice#Manufacturer_MAN-001">Medtronic plc</a></li>
+  <li><a href="#http://dbpedia.org/resource/Republic_of_Ireland" title="http://dbpedia.org/resource/Republic_of_Ireland"> <span>Republic of Ireland</span> </a></li>
+  <li><a href="#http://dbpedia.org/resource/Spain" title="http://dbpedia.org/resource/Spain"> <span>Spain</span> </a></li>
+  <li><a href="#Country_Spain" title="http://www.example.org/eu-meddevice#Country_Spain">Spain</a></li>
+  <li><a href="#Risk_RSK-003" title="http://www.example.org/eu-meddevice#Risk_RSK-003">Thrombosis - device-related</a></li>
+ </ul>
+ <div class="entity" id="ClassIII">
+  <h3>ClassIII<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#ClassIII</p>
+  <div class="comment">
+   <span class="markdown">Risk class ClassIII used in the dataset.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled risk class concept ClassIII.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#RiskClass" title="http://www.example.org/eu-meddevice#RiskClass">RiskClass</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Controlled risk class concept ClassIII."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Critical">
+  <h3>Critical<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Critical</p>
+  <div class="comment">
+   <span class="markdown">Severity level Critical.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled severity level Critical.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SeverityLevel" title="http://www.example.org/eu-meddevice#SeverityLevel">SeverityLevel</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Controlled severity level Critical."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Female">
+  <h3>Female<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Female</p>
+  <div class="comment">
+   <span class="markdown">Patient sex category Female.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled patient sex category Female.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SexCategory" title="http://www.example.org/eu-meddevice#SexCategory">SexCategory</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Controlled patient sex category Female."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Female"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://dbpedia.org/resource/France">
+  <h3>France<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://dbpedia.org/resource/France</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#Country_France" title="http://www.example.org/eu-meddevice#Country_France">France</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="#Country_France" title="http://www.example.org/eu-meddevice#Country_France">France</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country_France">
+  <h3>France<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Country_France</p>
+  <div class="comment">
+   <span class="markdown">Country individual for France.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Country concept for France.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#http://dbpedia.org/resource/France" title="http://dbpedia.org/resource/France">France</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Country concept for France."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="FSCA_FSCA-001">
+  <h3>FSCA-001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#FSCA_FSCA-001</p>
+  <div class="comment">
+   <span class="markdown">FSCA FSCA-001 imported from the source CSV.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#SafetyAlert" title="http://www.example.org/eu-meddevice#SafetyAlert">SafetyAlert</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#addressesIncident" title="http://www.example.org/eu-meddevice#addressesIncident">addressesIncident</a> <sup class="type-op" title="object property">op</sup> <a href="#Incident_INC-001" title="http://www.example.org/eu-meddevice#Incident_INC-001">INC-001</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasFSCAStatus" title="http://www.example.org/eu-meddevice#hasFSCAStatus">hasFSCAStatus</a> <sup class="type-op" title="object property">op</sup> <a href="http://www.example.org/eu-meddevice#Open" target="_blank" title="http://www.example.org/eu-meddevice#Open">Open</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasActionDate" title="http://www.example.org/eu-meddevice#hasActionDate">hasActionDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2024-02-01"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
+   </dd>
+   <dd>
+    <a href="#hasCountriesAffected" title="http://www.example.org/eu-meddevice#hasCountriesAffected">hasCountriesAffected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"EU-wide"</span>
+   </dd>
+   <dd>
+    <a href="#hasDescription" title="http://www.example.org/eu-meddevice#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0."</span>
+   </dd>
+   <dd>
+    <a href="#hasDevicesAffected" title="http://www.example.org/eu-meddevice#hasDevicesAffected">hasDevicesAffected</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"850"</span>
+   </dd>
+   <dd>
+    <a href="#hasFSCAId" title="http://www.example.org/eu-meddevice#hasFSCAId">hasFSCAId</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"FSCA-001"</span>
+   </dd>
+   <dd>
+    <a href="#hasFSCAReference" title="http://www.example.org/eu-meddevice#hasFSCAReference">hasFSCAReference</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"EU-FSCA-2024-000001"</span>
+   </dd>
+   <dd>
+    <a href="#hasScope" title="http://www.example.org/eu-meddevice#hasScope">hasScope</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"All HeartMate 3 LVAD units implanted since 2020"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://dbpedia.org/resource/Germany">
+  <h3>Germany<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://dbpedia.org/resource/Germany</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#Country_Germany" title="http://www.example.org/eu-meddevice#Country_Germany">Germany</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="#Country_Germany" title="http://www.example.org/eu-meddevice#Country_Germany">Germany</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country_Germany">
+  <h3>Germany<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Country_Germany</p>
+  <div class="comment">
+   <span class="markdown">Country individual for Germany.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Country concept for Germany.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#http://dbpedia.org/resource/Germany" title="http://dbpedia.org/resource/Germany">Germany</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Country concept for Germany."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Device_DEV-001">
+  <h3>HeartMate 3 LVAD<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Device_DEV-001</p>
+  <div class="comment">
+   <span class="markdown">Device DEV-001 named HeartMate 3 LVAD imported from the source CSV.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Device of type ImplantableActiveDevice registered under MDR with risk class ClassIII.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#ImplantableActiveDevice" title="http://www.example.org/eu-meddevice#ImplantableActiveDevice">ImplantableActiveDevice</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#governedByFramework" title="http://www.example.org/eu-meddevice#governedByFramework">governedByFramework</a> <sup class="type-op" title="object property">op</sup> <a href="http://www.example.org/eu-meddevice#MDR" target="_blank" title="http://www.example.org/eu-meddevice#MDR">M D R</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasManufacturer" title="http://www.example.org/eu-meddevice#hasManufacturer">hasManufacturer</a> <sup class="type-op" title="object property">op</sup> <a href="#Manufacturer_MAN-001" title="http://www.example.org/eu-meddevice#Manufacturer_MAN-001">Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasRiskClass" title="http://www.example.org/eu-meddevice#hasRiskClass">hasRiskClass</a> <sup class="type-op" title="object property">op</sup> <a href="#ClassIII" title="http://www.example.org/eu-meddevice#ClassIII">ClassIII</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDescription" title="http://www.example.org/eu-meddevice#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Device of type ImplantableActiveDevice registered under MDR with risk class ClassIII."</span>
+   </dd>
+   <dd>
+    <a href="#hasDeviceId" title="http://www.example.org/eu-meddevice#hasDeviceId">hasDeviceId</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"DEV-001"</span>
+   </dd>
+   <dd>
+    <a href="#hasDeviceName" title="http://www.example.org/eu-meddevice#hasDeviceName">hasDeviceName</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"HeartMate 3 LVAD"</span>
+   </dd>
+   <dd>
+    <a href="#hasIntendedPurpose" title="http://www.example.org/eu-meddevice#hasIntendedPurpose">hasIntendedPurpose</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Ventricular assist device for end-stage heart failure"</span>
+   </dd>
+   <dd>
+    <a href="#hasUDIDI" title="http://www.example.org/eu-meddevice#hasUDIDI">hasUDIDI</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"(01)00380740009095"</span>
+   </dd>
+   <dd>
+    <a href="#isActive" title="http://www.example.org/eu-meddevice#isActive">isActive</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#isIVD" title="http://www.example.org/eu-meddevice#isIVD">isIVD</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"false"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#isImplantable" title="http://www.example.org/eu-meddevice#isImplantable">isImplantable</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#isReusable" title="http://www.example.org/eu-meddevice#isReusable">isReusable</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"false"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Device of type ImplantableActiveDevice registered under MDR with risk class ClassIII."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Incident_INC-001">
+  <h3>INC-001<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Incident_INC-001</p>
+  <div class="comment">
+   <span class="markdown">Incident INC-001 imported from the source CSV.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#SeriousIncident" title="http://www.example.org/eu-meddevice#SeriousIncident">SeriousIncident</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasPatientSex" title="http://www.example.org/eu-meddevice#hasPatientSex">hasPatientSex</a> <sup class="type-op" title="object property">op</sup> <a href="#Male" title="http://www.example.org/eu-meddevice#Male">Male</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#involvesDevice" title="http://www.example.org/eu-meddevice#involvesDevice">involvesDevice</a> <sup class="type-op" title="object property">op</sup> <a href="#Device_DEV-001" title="http://www.example.org/eu-meddevice#Device_DEV-001">HeartMate 3 LVAD</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#isAssociatedWithRisk" title="http://www.example.org/eu-meddevice#isAssociatedWithRisk">isAssociatedWithRisk</a> <sup class="type-op" title="object property">op</sup> <a href="#Risk_RSK-003" title="http://www.example.org/eu-meddevice#Risk_RSK-003">Thrombosis - device-related</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedBy" title="http://www.example.org/eu-meddevice#reportedBy">reportedBy</a> <sup class="type-op" title="object property">op</sup> <a href="#Manufacturer_MAN-001" title="http://www.example.org/eu-meddevice#Manufacturer_MAN-001">Medtronic plc</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#reportedInCountry" title="http://www.example.org/eu-meddevice#reportedInCountry">reportedInCountry</a> <sup class="type-op" title="object property">op</sup> <a href="#Country_Germany" title="http://www.example.org/eu-meddevice#Country_Germany">Germany</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasCorrectiveActionTaken" title="http://www.example.org/eu-meddevice#hasCorrectiveActionTaken">hasCorrectiveActionTaken</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"true"^^<a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</a> </span>
+   </dd>
+   <dd>
+    <a href="#hasDescription" title="http://www.example.org/eu-meddevice#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."</span>
+   </dd>
+   <dd>
+    <a href="#hasDetectionDate" title="http://www.example.org/eu-meddevice#hasDetectionDate">hasDetectionDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2024-01-10"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
+   </dd>
+   <dd>
+    <a href="#hasEventDate" title="http://www.example.org/eu-meddevice#hasEventDate">hasEventDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2024-01-08"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
+   </dd>
+   <dd>
+    <a href="#hasIncidentId" title="http://www.example.org/eu-meddevice#hasIncidentId">hasIncidentId</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"INC-001"</span>
+   </dd>
+   <dd>
+    <a href="#hasIncidentReference" title="http://www.example.org/eu-meddevice#hasIncidentReference">hasIncidentReference</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"EU-INC-2024-000001"</span>
+   </dd>
+   <dd>
+    <a href="#hasOutcome" title="http://www.example.org/eu-meddevice#hasOutcome">hasOutcome</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Serious patient injury - embolic stroke"</span>
+   </dd>
+   <dd>
+    <a href="#hasPatientAge" title="http://www.example.org/eu-meddevice#hasPatientAge">hasPatientAge</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"58"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+   <dd>
+    <a href="#hasReportDate" title="http://www.example.org/eu-meddevice#hasReportDate">hasReportDate</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"2024-01-15"^^<a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a> </span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country_Ireland">
+  <h3>Ireland<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Country_Ireland</p>
+  <div class="comment">
+   <span class="markdown">Country individual for Ireland.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Country concept for Ireland.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#http://dbpedia.org/resource/Republic_of_Ireland" title="http://dbpedia.org/resource/Republic_of_Ireland">Republic of Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Country concept for Ireland."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Low">
+  <h3>Low<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Low</p>
+  <div class="comment">
+   <span class="markdown">Probability level Low.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled probability level Low.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#ProbabilityLevel" title="http://www.example.org/eu-meddevice#ProbabilityLevel">ProbabilityLevel</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Controlled probability level Low."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Male">
+  <h3>Male<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Male</p>
+  <div class="comment">
+   <span class="markdown">Patient sex category Male.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Controlled patient sex category Male.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#SexCategory" title="http://www.example.org/eu-meddevice#SexCategory">SexCategory</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Controlled patient sex category Male."@en</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#prefLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#prefLabel">pref Label</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Male"@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Manufacturer_MAN-001">
+  <h3>Medtronic plc<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Manufacturer_MAN-001</p>
+  <div class="comment">
+   <span class="markdown">Manufacturer Medtronic plc from the source CSV.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Manufacturer established in Ireland and supervised by Health Products Regulatory Authority (HPRA).</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Manufacturer" title="http://www.example.org/eu-meddevice#Manufacturer">Manufacturer</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#locatedInCountry" title="http://www.example.org/eu-meddevice#locatedInCountry">locatedInCountry</a> <sup class="type-op" title="object property">op</sup> <a href="#Country_Ireland" title="http://www.example.org/eu-meddevice#Country_Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#supervisedBy" title="http://www.example.org/eu-meddevice#supervisedBy">supervisedBy</a> <sup class="type-op" title="object property">op</sup> <a href="http://www.example.org/eu-meddevice#Authority_Health_Products_Regulatory_Authority_HPRA" target="_blank" title="http://www.example.org/eu-meddevice#Authority_Health_Products_Regulatory_Authority_HPRA">Authority Health Products Regulatory Authority H P R A</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasAuthorizationNumber" title="http://www.example.org/eu-meddevice#hasAuthorizationNumber">hasAuthorizationNumber</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"IE/2017/001234"</span>
+   </dd>
+   <dd>
+    <a href="#hasContactEmail" title="http://www.example.org/eu-meddevice#hasContactEmail">hasContactEmail</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"regulatory@medtronic.com"</span>
+   </dd>
+   <dd>
+    <a href="#hasDescription" title="http://www.example.org/eu-meddevice#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Manufacturer established in Ireland and supervised by Health Products Regulatory Authority (HPRA)."</span>
+   </dd>
+   <dd>
+    <a href="#hasEUDAMEDSRN" title="http://www.example.org/eu-meddevice#hasEUDAMEDSRN">hasEUDAMEDSRN</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"SRN-IE-MED-0001"</span>
+   </dd>
+   <dd>
+    <a href="#hasManufacturerId" title="http://www.example.org/eu-meddevice#hasManufacturerId">hasManufacturerId</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"MAN-001"</span>
+   </dd>
+   <dd>
+    <a href="#hasName" title="http://www.example.org/eu-meddevice#hasName">hasName</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Medtronic plc"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Manufacturer established in Ireland and supervised by Health Products Regulatory Authority (HPRA)."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://dbpedia.org/resource/Republic_of_Ireland">
+  <h3>Republic of Ireland<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://dbpedia.org/resource/Republic_of_Ireland</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#Country_Ireland" title="http://www.example.org/eu-meddevice#Country_Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="#Country_Ireland" title="http://www.example.org/eu-meddevice#Country_Ireland">Ireland</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="http://dbpedia.org/resource/Spain">
+  <h3>Spain<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://dbpedia.org/resource/Spain</p>
+  <dl class="description">
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#Country_Spain" title="http://www.example.org/eu-meddevice#Country_Spain">Spain</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2002/07/owl#sameAs" target="_blank" title="http://www.w3.org/2002/07/owl#sameAs">same As</a> <sup class="type-ep" title="external property">ep</sup> <a href="#Country_Spain" title="http://www.example.org/eu-meddevice#Country_Spain">Spain</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country_Spain">
+  <h3>Spain<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Country_Spain</p>
+  <div class="comment">
+   <span class="markdown">Country individual for Spain.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Country concept for Spain.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Country" title="http://www.example.org/eu-meddevice#Country">Country</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is same as
+   </dt>
+   <dd>
+    <a href="#http://dbpedia.org/resource/Spain" title="http://dbpedia.org/resource/Spain">Spain</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Country concept for Spain."@en</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Risk_RSK-003">
+  <h3>Thrombosis - device-related<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.example.org/eu-meddevice#Risk_RSK-003</p>
+  <div class="comment">
+   <span class="markdown">Risk RSK-003 imported from the source CSV.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Thrombus formation on device surface causing embolic events</span>
+  </div>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#InjuryRisk" title="http://www.example.org/eu-meddevice#InjuryRisk">InjuryRisk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dd>
+    <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#hasProbability" title="http://www.example.org/eu-meddevice#hasProbability">hasProbability</a> <sup class="type-op" title="object property">op</sup> <a href="#Low" title="http://www.example.org/eu-meddevice#Low">Low</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasRiskCategory" title="http://www.example.org/eu-meddevice#hasRiskCategory">hasRiskCategory</a> <sup class="type-op" title="object property">op</sup> <a href="http://www.example.org/eu-meddevice#RiskCategory_Patient_Harm" target="_blank" title="http://www.example.org/eu-meddevice#RiskCategory_Patient_Harm">Risk Category Patient Harm</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasSeverity" title="http://www.example.org/eu-meddevice#hasSeverity">hasSeverity</a> <sup class="type-op" title="object property">op</sup> <a href="#Critical" title="http://www.example.org/eu-meddevice#Critical">Critical</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#hasDescription" title="http://www.example.org/eu-meddevice#hasDescription">hasDescription</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Thrombus formation on device surface causing embolic events"</span>
+   </dd>
+   <dd>
+    <a href="#hasIMDRFCode" title="http://www.example.org/eu-meddevice#hasIMDRFCode">hasIMDRFCode</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"A0201"</span>
+   </dd>
+   <dd>
+    <a href="#hasRiskId" title="http://www.example.org/eu-meddevice#hasRiskId">hasRiskId</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"RSK-003"</span>
+   </dd>
+   <dd>
+    <a href="#hasRiskName" title="http://www.example.org/eu-meddevice#hasRiskName">hasRiskName</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Thrombosis - device-related"</span>
+   </dd>
+   <dd>
+    <a href="http://www.w3.org/2004/02/skos/core#definition" target="_blank" title="http://www.w3.org/2004/02/skos/core#definition">definition</a> <sup class="type-ap" title="annotation property">ap</sup> <span class="literal">"Thrombus formation on device surface causing embolic events"@en</span>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
+ <h3 id="swrlrules" class="list">SWRL rules</h3>
+ <ul class="hlist">
+  <li><a href="#d4e2530">Rule #1</a></li>
+  <li><a href="#d4e2601">Rule #2</a></li>
+  <li><a href="#d4e2672">Rule #3</a></li>
+ </ul>
+ <div class="entity" id="d4e2530">
+  <h3>Rule #1<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#FSCA" title="http://www.example.org/eu-meddevice#FSCA">FSCA</a> <sup class="type-c" title="class">c</sup>(?f) , <a href="#addressesIncident" title="http://www.example.org/eu-meddevice#addressesIncident">addressesIncident</a> <sup class="type-op" title="object property">op</sup>(?f,?i) -&gt; <a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>(?i)</p>
+ </div>
+ <div class="entity" id="d4e2601">
+  <h3>Rule #2<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>(?i) , <a href="#involvesDevice" title="http://www.example.org/eu-meddevice#involvesDevice">involvesDevice</a> <sup class="type-op" title="object property">op</sup>(?i,?d) -&gt; <a href="#Device" title="http://www.example.org/eu-meddevice#Device">Device</a> <sup class="type-c" title="class">c</sup>(?d)</p>
+ </div>
+ <div class="entity" id="d4e2672">
+  <h3>Rule #3<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#Incident" title="http://www.example.org/eu-meddevice#Incident">Incident</a> <sup class="type-c" title="class">c</sup>(?i) , <a href="#isAssociatedWithRisk" title="http://www.example.org/eu-meddevice#isAssociatedWithRisk">isAssociatedWithRisk</a> <sup class="type-op" title="object property">op</sup>(?i,?r) -&gt; <a href="#Risk" title="http://www.example.org/eu-meddevice#Risk">Risk</a> <sup class="type-c" title="class">c</sup>(?r)</p>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+<sup class="type-ep" title="External Properties">ep</sup>: External Properties
+</div>
+</div>

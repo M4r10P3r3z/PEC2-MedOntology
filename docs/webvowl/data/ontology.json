@@ -1,0 +1,3415 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.example.org/eu-meddevice", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "EU High-Risk Medical Devices and IVD Ontology"
+    },
+    "iri" : "http://www.example.org/eu-meddevice#",
+    "version" : "1.0",
+    "author" : [ "Mario Pérez Martínez" ],
+    "description" : {
+      "en" : "OWL ontology for high-risk medical devices and in vitro diagnostics, including manufacturers, risks, incidents and field safety corrective actions under MDR and IVDR."
+    },
+    "labels" : {
+      "en" : "EU High-Risk Medical Devices and IVD Ontology"
+    },
+    "comments" : {
+      "en" : "Ontology created for PEC 2 about high-risk medical devices and in vitro diagnostics."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Mario Pérez Martínez",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "OWL ontology for high-risk medical devices and in vitro diagnostics, including manufacturers, risks, incidents and field safety corrective actions.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "EU High-Risk Medical Devices and IVD Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "60",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "117",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "154",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "131",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#CybersecurityRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing cybersecurity threats.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CybersecurityRisk",
+      "en" : "CybersecurityRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing cybersecurity threats."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "subClasses" : [ "7", "5", "8", "9", "10", "11", "12", "13", "14", "15" ],
+    "attributes" : [ "external" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#ProbabilityLevel",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Controlled probability level for a risk.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ProbabilityLevel",
+      "en" : "ProbabilityLevel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Low",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Controlled probability level Low.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Probability level Low."
+      },
+      "labels" : {
+        "IRI-based" : "Low",
+        "en" : "Low"
+      }
+    } ],
+    "comment" : {
+      "en" : "Controlled probability level for a risk."
+    },
+    "id" : "13",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#ReportableEntity",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Entity able to report incidents.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ReportableEntity",
+      "en" : "ReportableEntity"
+    },
+    "subClasses" : [ "20" ],
+    "comment" : {
+      "en" : "Entity able to report incidents."
+    },
+    "id" : "19",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#FSCAType",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Controlled concept used to classify field safety corrective action types.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FSCAType",
+      "en" : "FSCAType"
+    },
+    "comment" : {
+      "en" : "Controlled concept used to classify field safety corrective action types."
+    },
+    "id" : "14",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#SeverityLevel",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Controlled severity level for a risk.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SeverityLevel",
+      "en" : "SeverityLevel"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Critical",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Controlled severity level Critical.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Severity level Critical."
+      },
+      "labels" : {
+        "IRI-based" : "Critical",
+        "en" : "Critical"
+      }
+    } ],
+    "comment" : {
+      "en" : "Controlled severity level for a risk."
+    },
+    "id" : "9",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#RegulatoryFramework",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "European regulatory framework under which a device is registered.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RegulatoryFramework",
+      "en" : "RegulatoryFramework"
+    },
+    "comment" : {
+      "en" : "European regulatory framework under which a device is registered."
+    },
+    "id" : "15",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#Recall",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "FSCA subclass for recalls.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Recall",
+      "en" : "Recall"
+    },
+    "comment" : {
+      "en" : "FSCA subclass for recalls."
+    },
+    "id" : "36",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#Manufacturer",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Organisation responsible for manufacturing a device.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Manufacturer",
+      "en" : "Manufacturer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Manufacturer_MAN-001",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Manufacturer established in Ireland and supervised by Health Products Regulatory Authority (HPRA).",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Manufacturer Medtronic plc from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "Manufacturer_MAN-001",
+        "en" : "Medtronic plc"
+      }
+    } ],
+    "comment" : {
+      "en" : "Organisation responsible for manufacturing a device."
+    },
+    "id" : "20",
+    "superClasses" : [ "19", "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#SingleUseDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device subclass for single-use devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SingleUseDevice",
+      "en" : "SingleUseDevice"
+    },
+    "comment" : {
+      "en" : "Device subclass for single-use devices."
+    },
+    "id" : "41",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#RiskClass",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk class assigned to a device according to MDR or IVDR.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RiskClass",
+      "en" : "RiskClass"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#ClassIII",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Controlled risk class concept ClassIII.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Risk class ClassIII used in the dataset."
+      },
+      "labels" : {
+        "IRI-based" : "ClassIII",
+        "en" : "ClassIII"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk class assigned to a device according to MDR or IVDR."
+    },
+    "id" : "5",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#SexCategory",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Controlled concept used to represent patient sex categories when reported in incidents.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SexCategory",
+      "en" : "SexCategory"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Male",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Male",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Controlled patient sex category Male.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Patient sex category Male."
+      },
+      "labels" : {
+        "IRI-based" : "Male",
+        "en" : "Male"
+      }
+    }, {
+      "iri" : "http://www.example.org/eu-meddevice#Female",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "prefLabel" : [ {
+          "identifier" : "prefLabel",
+          "language" : "en",
+          "value" : "Female",
+          "type" : "label"
+        } ],
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Controlled patient sex category Female.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Patient sex category Female."
+      },
+      "labels" : {
+        "IRI-based" : "Female",
+        "en" : "Female"
+      }
+    } ],
+    "comment" : {
+      "en" : "Controlled concept used to represent patient sex categories when reported in incidents."
+    },
+    "id" : "12",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#InSituCorrection",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "FSCA subclass for in situ corrections.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InSituCorrection",
+      "en" : "InSituCorrection"
+    },
+    "comment" : {
+      "en" : "FSCA subclass for in situ corrections."
+    },
+    "id" : "60",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#UserNotice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "FSCA subclass for user notices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "UserNotice",
+      "en" : "UserNotice"
+    },
+    "comment" : {
+      "en" : "FSCA subclass for user notices."
+    },
+    "id" : "63",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#DiagnosticRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing diagnostic errors or failures.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DiagnosticRisk",
+      "en" : "DiagnosticRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing diagnostic errors or failures."
+    },
+    "id" : "67",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#ActiveImplant",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device subclass for active implant devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActiveImplant",
+      "en" : "ActiveImplant"
+    },
+    "comment" : {
+      "en" : "Device subclass for active implant devices."
+    },
+    "id" : "75",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#ImplantableDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device subclass for implantable devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ImplantableDevice",
+      "en" : "ImplantableDevice"
+    },
+    "comment" : {
+      "en" : "Device subclass for implantable devices."
+    },
+    "id" : "78",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#HighRiskDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device inferred as high risk by a SWRL rule.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "HighRiskDevice",
+      "en" : "HighRiskDevice"
+    },
+    "comment" : {
+      "en" : "Device inferred as high risk by a SWRL rule."
+    },
+    "id" : "86",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#SeriousIncident",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Incident subclass for serious incidents.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SeriousIncident",
+      "en" : "SeriousIncident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Incident_INC-001",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Incident INC-001 imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "Incident_INC-001",
+        "en" : "INC-001"
+      }
+    } ],
+    "comment" : {
+      "en" : "Incident subclass for serious incidents."
+    },
+    "id" : "87",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#MalfunctionRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing device malfunctions.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MalfunctionRisk",
+      "en" : "MalfunctionRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing device malfunctions."
+    },
+    "id" : "90",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#Country",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Country relevant to manufacturers or incidents.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Country",
+      "en" : "Country"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Country_Spain",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Country concept for Spain.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Country individual for Spain."
+      },
+      "labels" : {
+        "IRI-based" : "Country_Spain",
+        "en" : "Spain"
+      }
+    }, {
+      "iri" : "http://www.example.org/eu-meddevice#Country_Germany",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Country concept for Germany.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Country individual for Germany."
+      },
+      "labels" : {
+        "IRI-based" : "Country_Germany",
+        "en" : "Germany"
+      }
+    }, {
+      "iri" : "http://www.example.org/eu-meddevice#Country_Ireland",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Country concept for Ireland.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Country individual for Ireland."
+      },
+      "labels" : {
+        "IRI-based" : "Country_Ireland",
+        "en" : "Ireland"
+      }
+    }, {
+      "iri" : "http://www.example.org/eu-meddevice#Country_France",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Country concept for France.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Country individual for France."
+      },
+      "labels" : {
+        "IRI-based" : "Country_France",
+        "en" : "France"
+      }
+    } ],
+    "comment" : {
+      "en" : "Country relevant to manufacturers or incidents."
+    },
+    "id" : "7",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#NearMissIncident",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Incident subclass for near miss incidents.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NearMissIncident",
+      "en" : "NearMissIncident"
+    },
+    "comment" : {
+      "en" : "Incident subclass for near miss incidents."
+    },
+    "id" : "96",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#MedicalCatalogueEntity",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Top-level class for the ontology.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MedicalCatalogueEntity",
+      "en" : "MedicalCatalogueEntity"
+    },
+    "subClasses" : [ "5", "83", "13", "14", "19", "37", "30", "7", "4", "2", "8", "9", "10", "11", "12", "15", "20" ],
+    "comment" : {
+      "en" : "Top-level class for the ontology."
+    },
+    "id" : "18"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#InterferenceRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing electromagnetic or signal interference.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InterferenceRisk",
+      "en" : "InterferenceRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing electromagnetic or signal interference."
+    },
+    "id" : "103",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#ContaminationRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing contamination issues.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContaminationRisk",
+      "en" : "ContaminationRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing contamination issues."
+    },
+    "id" : "112",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#MaterialRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing material compatibility or degradation issues.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaterialRisk",
+      "en" : "MaterialRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing material compatibility or degradation issues."
+    },
+    "id" : "111",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#SoftwareRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing software failures or defects.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SoftwareRisk",
+      "en" : "SoftwareRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing software failures or defects."
+    },
+    "id" : "119",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#RadiationRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing radiation-related issues.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RadiationRisk",
+      "en" : "RadiationRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing radiation-related issues."
+    },
+    "id" : "117",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#SelfTestDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device subclass for self-test diagnostic devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SelfTestDevice",
+      "en" : "SelfTestDevice"
+    },
+    "comment" : {
+      "en" : "Device subclass for self-test diagnostic devices."
+    },
+    "id" : "120",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#FSCAStatus",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Controlled status of a field safety corrective action.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FSCAStatus",
+      "en" : "FSCAStatus"
+    },
+    "comment" : {
+      "en" : "Controlled status of a field safety corrective action."
+    },
+    "id" : "10",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#CompetentAuthority",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "National competent authority supervising manufacturers or products.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CompetentAuthority",
+      "en" : "CompetentAuthority"
+    },
+    "comment" : {
+      "en" : "National competent authority supervising manufacturers or products."
+    },
+    "id" : "83",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#Incident",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Reported incident linked to a device and a risk.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Incident",
+      "en" : "Incident"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Incident_INC-001",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Incident INC-001 imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "Incident_INC-001",
+        "en" : "INC-001"
+      }
+    } ],
+    "subClasses" : [ "87", "96" ],
+    "comment" : {
+      "en" : "Reported incident linked to a device and a risk."
+    },
+    "id" : "30",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#ActiveDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device subclass for active devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ActiveDevice",
+      "en" : "ActiveDevice"
+    },
+    "comment" : {
+      "en" : "Device subclass for active devices."
+    },
+    "id" : "136",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#ImplantableActiveDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device subclass for implantable active devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ImplantableActiveDevice",
+      "en" : "ImplantableActiveDevice"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Device_DEV-001",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Device of type ImplantableActiveDevice registered under MDR with risk class ClassIII.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Device DEV-001 named HeartMate 3 LVAD imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "Device_DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "comment" : {
+      "en" : "Device subclass for implantable active devices."
+    },
+    "id" : "140",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#InfectionRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing infection risks.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InfectionRisk",
+      "en" : "InfectionRisk"
+    },
+    "comment" : {
+      "en" : "Risk subclass describing infection risks."
+    },
+    "id" : "109",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "152",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "154",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "156",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#FSCA",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Field safety corrective action associated with an incident.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "FSCA",
+      "en" : "FSCA"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#FSCA_FSCA-001",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "FSCA FSCA-001 imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA_FSCA-001",
+        "en" : "FSCA-001"
+      }
+    } ],
+    "subClasses" : [ "63", "131", "36", "60" ],
+    "comment" : {
+      "en" : "Field safety corrective action associated with an incident."
+    },
+    "id" : "37",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#Risk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Identified risk associated with a medical device.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Risk",
+      "en" : "Risk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Risk_RSK-003",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Thrombus formation on device surface causing embolic events",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Risk RSK-003 imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "Risk_RSK-003",
+        "en" : "Thrombosis - device-related"
+      }
+    } ],
+    "subClasses" : [ "119", "90", "112", "1", "117", "67", "106", "111", "109", "103" ],
+    "comment" : {
+      "en" : "Identified risk associated with a medical device."
+    },
+    "id" : "2",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#InjuryRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Risk subclass describing patient injuries.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InjuryRisk",
+      "en" : "InjuryRisk"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Risk_RSK-003",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Thrombus formation on device surface causing embolic events",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Risk RSK-003 imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "Risk_RSK-003",
+        "en" : "Thrombosis - device-related"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk subclass describing patient injuries."
+    },
+    "id" : "106",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#Device",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Medical device or in vitro diagnostic product registered in the catalogue.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#Device_DEV-001",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Device of type ImplantableActiveDevice registered under MDR with risk class ClassIII.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "Device DEV-001 named HeartMate 3 LVAD imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "Device_DEV-001",
+        "en" : "HeartMate 3 LVAD"
+      }
+    } ],
+    "subClasses" : [ "41", "86", "136", "120", "75", "140", "78", "161" ],
+    "comment" : {
+      "en" : "Medical device or in vitro diagnostic product registered in the catalogue."
+    },
+    "id" : "4",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#DeviceType",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Controlled concept used to classify the type of medical device.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DeviceType",
+      "en" : "DeviceType"
+    },
+    "comment" : {
+      "en" : "Controlled concept used to classify the type of medical device."
+    },
+    "id" : "8",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#SafetyAlert",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "FSCA subclass for safety alerts.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "SafetyAlert",
+      "en" : "SafetyAlert"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.example.org/eu-meddevice#FSCA_FSCA-001",
+      "baseIri" : "http://www.example.org/eu-meddevice",
+      "annotations" : {
+        "definition" : [ {
+          "identifier" : "definition",
+          "language" : "en",
+          "value" : "Safety alert issued to all implanting centres regarding anticoagulation protocol update for HeartMate 3 to reduce device thrombosis risk. INR target range revised to 2.0–3.0.",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "en" : "FSCA FSCA-001 imported from the source CSV."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA_FSCA-001",
+        "en" : "FSCA-001"
+      }
+    } ],
+    "comment" : {
+      "en" : "FSCA subclass for safety alerts."
+    },
+    "id" : "131",
+    "superClasses" : [ "37" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#RiskCategory",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Controlled category grouping similar risks.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RiskCategory",
+      "en" : "RiskCategory"
+    },
+    "comment" : {
+      "en" : "Controlled category grouping similar risks."
+    },
+    "id" : "11",
+    "superClasses" : [ "6", "18" ]
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#InVitroDiagnosticDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device subclass for in vitro diagnostic devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "InVitroDiagnosticDevice",
+      "en" : "InVitroDiagnosticDevice"
+    },
+    "comment" : {
+      "en" : "Device subclass for in vitro diagnostic devices."
+    },
+    "id" : "161",
+    "superClasses" : [ "4" ]
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "167",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "168",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "169",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "171",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.example.org/eu-meddevice#hasRiskClass",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "5",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a device to its risk class.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRiskClass",
+      "en" : "hasRiskClass"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links a device to its risk class."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasUDIDI",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "17",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the UDI-DI code.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasUDIDI",
+      "en" : "hasUDIDI"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Stores the UDI-DI code."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#isActive",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "22",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates whether the device is active.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isActive",
+      "en" : "isActive"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates whether the device is active."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#locatedInCountry",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "7",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a manufacturer to its country.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "locatedInCountry",
+      "en" : "locatedInCountry"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Links a manufacturer to its country."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasContactEmail",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "25",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the regulatory contact email.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasContactEmail",
+      "en" : "hasContactEmail"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Stores the regulatory contact email."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasIMDRFCode",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "27",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the IMDRF code.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIMDRFCode",
+      "en" : "hasIMDRFCode"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Stores the IMDRF code."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#reportedInCountry",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "7",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an incident to the country where it was reported.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reportedInCountry",
+      "en" : "reportedInCountry"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Links an incident to the country where it was reported."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasRiskCategory",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "11",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a risk to its risk category.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRiskCategory",
+      "en" : "hasRiskCategory"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Links a risk to its risk category."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasDeviceName",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "43",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the device commercial name.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDeviceName",
+      "en" : "hasDeviceName"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Stores the device commercial name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasRelatedRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "2",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Inferred property linking a device to a risk mentioned in an incident.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRelatedRisk",
+      "en" : "hasRelatedRisk"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Inferred property linking a device to a risk mentioned in an incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#isImplantable",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "0",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates whether the device is implantable.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isImplantable",
+      "en" : "isImplantable"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates whether the device is implantable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasAuthorizationNumber",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "47",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the manufacturer authorisation number.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAuthorizationNumber",
+      "en" : "hasAuthorizationNumber"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Stores the manufacturer authorisation number."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#governedByFramework",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "15",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a device to the regulatory framework under which it is registered.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "governedByFramework",
+      "en" : "governedByFramework"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links a device to the regulatory framework under which it is registered."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#isSubclassifiedUnder",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "18",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Transitive property reused from Exercise 1 to represent transitive classification links between classification resources.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isSubclassifiedUnder",
+      "en" : "isSubclassifiedUnder"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Transitive property reused from Exercise 1 to represent transitive classification links between classification resources."
+    },
+    "attributes" : [ "object", "transitive" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasDevicesAffected",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "51",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the number or textual expression of affected devices.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDevicesAffected",
+      "en" : "hasDevicesAffected"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Stores the number or textual expression of affected devices."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasRiskName",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "31",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the preferred risk name.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRiskName",
+      "en" : "hasRiskName"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Stores the preferred risk name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasFSCAStatus",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "10",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an FSCA to its status.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFSCAStatus",
+      "en" : "hasFSCAStatus"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Links an FSCA to its status."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "18",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "64"
+  }, {
+    "range" : "18",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "65"
+  }, {
+    "range" : "18",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasName",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "38",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores a preferred name.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasName",
+      "en" : "hasName"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Stores a preferred name."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasManufacturerId",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "55",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the manufacturer identifier.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasManufacturerId",
+      "en" : "hasManufacturerId"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Stores the manufacturer identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasEUDAMEDSRN",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "62",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the EUDAMED SRN.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEUDAMEDSRN",
+      "en" : "hasEUDAMEDSRN"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Stores the EUDAMED SRN."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasScope",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "33",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the textual scope of the FSCA.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasScope",
+      "en" : "hasScope"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Stores the textual scope of the FSCA."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "range" : "18",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "72"
+  }, {
+    "range" : "18",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasPatientSex",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "12",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relates an incident to the patient sex category when available.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPatientSex",
+      "en" : "hasPatientSex"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Relates an incident to the patient sex category when available."
+    },
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "range" : "18",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "76"
+  }, {
+    "range" : "18",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "77"
+  }, {
+    "range" : "18",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "19",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "18",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "18",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "range" : "6",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "6",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasCorrectiveActionTaken",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "89",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates whether a corrective action was taken.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCorrectiveActionTaken",
+      "en" : "hasCorrectiveActionTaken"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Indicates whether a corrective action was taken."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#reportedBy",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "19",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an incident to the reporting entity.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reportedBy",
+      "en" : "reportedBy"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Links an incident to the reporting entity."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasActionDate",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "93",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the action date.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasActionDate",
+      "en" : "hasActionDate"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Stores the action date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "range" : "6",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "94"
+  }, {
+    "range" : "6",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "95"
+  }, {
+    "range" : "6",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "97"
+  }, {
+    "range" : "6",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "98"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "99"
+  }, {
+    "range" : "6",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "100"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "102"
+  }, {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "2",
+    "domain" : "106",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "2",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "2",
+    "domain" : "109",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "2",
+    "domain" : "111",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasCountriesAffected",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "114",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the textual expression of affected countries.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasCountriesAffected",
+      "en" : "hasCountriesAffected"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Stores the textual expression of affected countries."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasIntendedPurpose",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "53",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the intended purpose of a device.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIntendedPurpose",
+      "en" : "hasIntendedPurpose"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Stores the intended purpose of a device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "range" : "2",
+    "domain" : "117",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasFSCAReference",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "56",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the EUDAMED FSCA reference.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFSCAReference",
+      "en" : "hasFSCAReference"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Stores the EUDAMED FSCA reference."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "2",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "37",
+    "domain" : "60",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "37",
+    "domain" : "36",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "2",
+    "domain" : "90",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "range" : "2",
+    "domain" : "119",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasManufacturer",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "20",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a device to its manufacturer.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasManufacturer",
+      "en" : "hasManufacturer"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links a device to its manufacturer."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "127"
+  }, {
+    "range" : "30",
+    "domain" : "96",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "range" : "30",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "129"
+  }, {
+    "range" : "37",
+    "domain" : "131",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "130"
+  }, {
+    "range" : "37",
+    "domain" : "63",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasReportDate",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "39",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the report date.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasReportDate",
+      "en" : "hasReportDate"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Stores the report date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasEventDate",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "61",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the event date.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasEventDate",
+      "en" : "hasEventDate"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Stores the event date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasOutcome",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "35",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the incident outcome.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasOutcome",
+      "en" : "hasOutcome"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Stores the incident outcome."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#isAssociatedWithRisk",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "2",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an incident to the related risk.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isAssociatedWithRisk",
+      "en" : "isAssociatedWithRisk"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Links an incident to the related risk."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "137"
+  }, {
+    "range" : "18",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "138"
+  }, {
+    "range" : "18",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "139"
+  }, {
+    "range" : "18",
+    "domain" : "20",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasRiskId",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "32",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the risk identifier.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasRiskId",
+      "en" : "hasRiskId"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Stores the risk identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "range" : "18",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "143"
+  }, {
+    "range" : "18",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "144"
+  }, {
+    "range" : "18",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "145"
+  }, {
+    "range" : "18",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#isReusable",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "101",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates whether the device is reusable.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isReusable",
+      "en" : "isReusable"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates whether the device is reusable."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasPatientAge",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "40",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the patient age when available.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasPatientAge",
+      "en" : "hasPatientAge"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Stores the patient age when available."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasIncidentId",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "58",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the incident identifier.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIncidentId",
+      "en" : "hasIncidentId"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Stores the incident identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasIncidentReference",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "54",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the EUDAMED incident reference.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasIncidentReference",
+      "en" : "hasIncidentReference"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Stores the EUDAMED incident reference."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasProbability",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "13",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a risk to its probability level.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasProbability",
+      "en" : "hasProbability"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Links a risk to its probability level."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasSeverity",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "9",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a risk to its severity level.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSeverity",
+      "en" : "hasSeverity"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Links a risk to its severity level."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasDetectionDate",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "155",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the detection date.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDetectionDate",
+      "en" : "hasDetectionDate"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Stores the detection date."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#addressesIncident",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "30",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an FSCA to the incident it addresses.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "addressesIncident",
+      "en" : "addressesIncident"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Links an FSCA to the incident it addresses."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasDeviceId",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "156",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the device identifier.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDeviceId",
+      "en" : "hasDeviceId"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Stores the device identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "range" : "4",
+    "domain" : "161",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "4",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasDescription",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "154",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores a textual description.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasDescription",
+      "en" : "hasDescription"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Stores a textual description."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "163"
+  }, {
+    "range" : "4",
+    "domain" : "140",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "4",
+    "domain" : "75",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#supervisedBy",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "83",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links a manufacturer to its supervising competent authority.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "supervisedBy",
+      "en" : "supervisedBy"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "Links a manufacturer to its supervising competent authority."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "166"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasFSCAId",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "57",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the FSCA identifier.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasFSCAId",
+      "en" : "hasFSCAId"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Stores the FSCA identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "167"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#isIVD",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "28",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Indicates whether the device is an IVD.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isIVD",
+      "en" : "isIVD"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates whether the device is an IVD."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "168"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#hasClosureDate",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "152",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Stores the closure date when available.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasClosureDate",
+      "en" : "hasClosureDate"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Stores the closure date when available."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "169"
+  }, {
+    "range" : "4",
+    "domain" : "120",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#involvesDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "4",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Links an incident to the involved device.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "involvesDevice",
+      "en" : "involvesDevice"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Links an incident to the involved device."
+    },
+    "attributes" : [ "functional", "object" ],
+    "id" : "171"
+  }, {
+    "iri" : "http://www.example.org/eu-meddevice#affectsDevice",
+    "baseIri" : "http://www.example.org/eu-meddevice",
+    "range" : "4",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Inferred property linking an FSCA to the device affected by the action.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "affectsDevice",
+      "en" : "affectsDevice"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Inferred property linking an FSCA to the device affected by the action."
+    },
+    "attributes" : [ "object" ],
+    "id" : "172"
+  }, {
+    "range" : "4",
+    "domain" : "41",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "2",
+    "domain" : "103",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "4",
+    "domain" : "136",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "range" : "4",
+    "domain" : "86",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "176"
+  } ]
+}
